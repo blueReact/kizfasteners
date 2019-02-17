@@ -1,13 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', function(req, res){
-  res.redirect('www.google.com');
-});
+const contactusController = require('../controllers/contactus')
 
-router.post('/' , function(req, res){
-  console.log(req.body);
-});
+
+// POST /api/contactus
+router.post('/contactus', contactusController.post);
 
 
 module.exports = router;

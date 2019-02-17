@@ -3,10 +3,10 @@ const router = express.Router();
 
 const admincontroller = require('../controllers/admin');
 
-// GET /admin/get
-router.get('/', admincontroller.get);
+// GET /api/admin
+router.get('/admin', admincontroller.get);
 
-// POST /admin/post
-router.post('/' , admincontroller.post);
+// POST /api/admin
+router.post('/admin' , admincontroller.post);
 
 module.exports = router;
