@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const contactusRoutes = require('./routes/contactUs');
 const adminRoutes = require('./routes/admin');
 
+const port = process.env.PORT || 3000;
 const app = express();
 
 // parse epplication/x-www-form-urlencoded
@@ -35,6 +36,6 @@ app.use(function(req, res, next){
   res.status(statusCode).send(status);
 });
 
-app.listen(3000, function(){
-  console.log('Running on port', 3000)
+app.listen(port, function(){
+  console.log('Running on port', port);
 });
