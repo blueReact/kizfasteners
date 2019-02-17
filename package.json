@@ -1,0 +1,28 @@
+{
+  "name": "kizfasteners",
+  "version": "1.0.0",
+  "description": "Website powred by MEAN stack & AWS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app",
+    "start-dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roycodeman/kizfasteners.git"
+  },
+  "author": "rahul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roycodeman/kizfasteners/issues"
+  },
+  "homepage": "https://github.com/roycodeman/kizfasteners#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
