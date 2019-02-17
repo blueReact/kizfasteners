@@ -30,11 +30,11 @@ app.use('/admin', adminRoutes);
 
 
 // error middleware
-app.use(function(req, res, next){
-  const statusCode = req.statusCode;
-  const status = req.status;
-  res.status(statusCode).send(status);
-});
+// app.use(function(req, res, next){
+//   const statusCode = req.statusCode;
+//   const status = req.status;
+//   res.status(statusCode).send(status);
+// });
 
 app.listen(port, function(){
   console.log('running on port', port);
