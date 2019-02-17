@@ -1,13 +1,10 @@
 const path = require('path');
-const express = require("express");
+const express = require('express');
+const app = express();
 const bodyParser = require('body-parser');
 
-// router
-const contactusRoutes = require('./routes/contactUs');
-const adminRoutes = require('./routes/admin');
+port = process.env.PORT || 3000;
 
-const port = process.env.PORT || 3000;
-const app = express();
 
 // parse epplication/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({extended: false}));
@@ -18,24 +15,14 @@ app.use(bodyParser.json());
 // serving static files
 app.use(express.static(path.join(__dirname, "public")));
 
-/*
- * routes 
- */
+app.get('/', function(req, res){
 
-// contactUs
-app.use('/', contactusRoutes);
+  res.send('Hello from cloud RAhul.');
 
-// admin
-app.use('/admin', adminRoutes);
+});
 
-
-// error middleware
-// app.use(function(req, res, next){
-//   const statusCode = req.statusCode;
-//   const status = req.status;
-//   res.status(statusCode).send(status);
-// });
 
 app.listen(port, function(){
   console.log('running on port', port);
 });
+
