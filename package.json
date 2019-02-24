@@ -4,7 +4,7 @@
   "description": "Website powred by MEAN stack & AWS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node app",
     "start-dev": "nodemon app"
   },
@@ -20,11 +20,16 @@
   "homepage": "https://github.com/roycodeman/kizfasteners#readme",
   "dependencies": {
     "aws-sdk": "^2.404.0",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
+    "config": "^3.0.1",
     "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
     "mongoose": "^5.4.13"
   },
   "devDependencies": {
+    "jest": "^24.1.0",
     "nodemon": "^1.18.10"
   }
 }
