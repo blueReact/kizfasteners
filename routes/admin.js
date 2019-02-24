@@ -6,9 +6,11 @@ const {
 } = require('express-validator/check');
 
 const admincontroller = require('../controllers/admin');
+const isLoggedIn = require('../middleware/is-logged-in');
+const isAdmin = require('../middleware/is-admin');
 
 // GET /api/admin
-router.get('/admin', admincontroller.adminCustomerGet);
+router.get('/admin', isLoggedIn, isAdmin, admincontroller.adminCustomerGet);
 
 // POST /api/adminRegister
 router.post('/adminRegister',[

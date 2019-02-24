@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = require("mongoose").Schema;
 
 var adminSchema = new Schema({
-  
+
   email: {
     type: String,
     required: true,
@@ -15,9 +15,9 @@ var adminSchema = new Schema({
   admin: {
     type: Boolean,
     default: false
-},
-},{
+  },
+}, {
   timestamps: true
-})
+});
 
 module.exports = mongoose.model('AdminSchema', adminSchema);

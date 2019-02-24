@@ -54,10 +54,6 @@ module.exports.adminRegister = function (req, res, next) {
 
   });
 
-
-
-
-
 }
 
 module.exports.adminLogin = function (req, res, next) {
@@ -82,12 +78,12 @@ module.exports.adminLogin = function (req, res, next) {
     })
     .then(function (user) {
 
-
       bcrypt.compare(password, user.password, function (err, result) {     
         // console.log('result ',result); // boolean
-        if (result) {
+        if (result) {          
 
-          console.log(user.admin);
+          req.session.isLoggedIn = true;
+          req.session.admin = user.admin;
           
           // logged in successfully
           return res.status(200).json({

@@ -1,14 +1,13 @@
 const path = require('path');
 
 const express = require('express');
+const session = require('express-session');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const config = require('config');
 
 const port = process.env.PORT || 3000;
 const app = express();
-
-console.log(config.get('mlab.dbName'));
 
 // router
 const contactusRoutes = require('./routes/contactus');
@@ -32,6 +31,12 @@ app.use(bodyParser.urlencoded({
 // parse application/json
 app.use(bodyParser.json());
 
+app.use(session({
+  secret: 'my session secret',
+  resave: false,
+  saveUninitialized: false
+}));
+
 // serving static files
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -44,7 +49,6 @@ app.use('/api', contactusRoutes);
 
 // admin
 app.use('/api', adminRoutes);
-
 
 app.use(function(err, req, res, next){
 
