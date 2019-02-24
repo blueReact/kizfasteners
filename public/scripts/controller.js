@@ -34,7 +34,7 @@
           }
         })
         .then(function (response) {
-          
+
           vm.response = response.data;
 
           // resetting the fields
@@ -64,7 +64,7 @@
           }
         })
         .then(function (response) {
-          
+
           vm.response = response.data;
 
           // resetting the fields
@@ -94,12 +94,17 @@
           }
         })
         .then(function (response) {
-          
+
           vm.response = response.data;
 
           // resetting the fields
-         // vm.email = vm.password = '';
+          // vm.email = vm.password = '';
           console.log(vm.response);
+
+
+          localStorage.setItem("admin", vm.response.admin)
+          localStorage.setItem("isLoggedIn", vm.response.isLoggedIn)
+
           $location.path("/admindashboard")
 
         })
@@ -108,7 +113,31 @@
         });
     }
 
-  };
 
+    vm.getContact = function () {
+    $http({
+        method: 'get',
+        url: '/api/admin',
+        headers: {
+          'Content-Type': 'application/json',
+          //Authorization: token
+        }
+      })
+      .then(function (response) {
+
+        vm.contacts = response.data;
+
+        // resetting the fields
+        // vm.email = vm.password = '';
+
+        $location.path("/admindashboard")
+
+      })
+      .catch(function (err) {
+        console.log(err);
+      });
+
+  };
+  };
 
 })();

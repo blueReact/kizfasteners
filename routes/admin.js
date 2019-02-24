@@ -8,7 +8,7 @@ const {
 const admincontroller = require('../controllers/admin');
 
 // GET /api/admin
-router.get('/admin', admincontroller.get);
+router.get('/admin', admincontroller.adminCustomerGet);
 
 // POST /api/adminRegister
 router.post('/adminRegister',[
@@ -34,7 +34,6 @@ router.post('/adminRegister',[
     .trim()
   
   ], admincontroller.adminRegister);
-
 
 // POST /api/adminLogin
 router.post('/adminLogin', [

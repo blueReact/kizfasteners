@@ -1,5 +1,6 @@
 const bcrypt = require('bcryptjs');
 const admin = require('../models/admin');
+const contactUs = require('../models/contactus');
 
 const {
   validationResult
@@ -87,11 +88,13 @@ module.exports.adminLogin = function (req, res, next) {
         if (result) {
 
           console.log(user.admin);
-          // setting in the localstorage
-          req.session.isAdmin = true;
-  
+          
           // logged in successfully
-          return res.status(200).json(result);
+          return res.status(200).json({
+            message: "Login successfullly",
+            admin: user.admin,
+            isLoggedIn: true
+          });
   
         } else {
   
@@ -102,6 +105,36 @@ module.exports.adminLogin = function (req, res, next) {
 
       });
       
+
+    })
+    .catch(function (err) {
+
+      res.send(err)
+
+    });
+
+}
+
+module.exports.adminCustomerGet = function (req, res, next) {
+  
+  // console.log('login', req.body);
+  // res.send('POST');
+
+  // validationResult
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(422).json({
+      errors: errors.array()
+    });
+  };
+
+  contactUs
+    .find({})
+    .then(function (user) {
+          
+        // logged in successfully
+        return res.status(200).json({user: user});
+  
 
     })
     .catch(function (err) {
