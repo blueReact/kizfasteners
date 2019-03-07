@@ -1,4 +1,6 @@
 const bcrypt = require('bcryptjs');
+const moment = require('moment');
+const _ = require('lodash');
 const admin = require('../models/admin');
 const contactUs = require('../models/contactus');
 
@@ -28,7 +30,7 @@ module.exports.adminRegister = function (req, res, next) {
   bcrypt.genSalt(12, function (err, salt) {
 
     bcrypt.hash(password, salt, function (err, hash) {
-      
+
       console.log('hash', hash);
 
       admin
@@ -57,7 +59,7 @@ module.exports.adminRegister = function (req, res, next) {
 }
 
 module.exports.adminLogin = function (req, res, next) {
-  
+
   // console.log('login', req.body);
   // res.send('POST');
 
@@ -78,29 +80,29 @@ module.exports.adminLogin = function (req, res, next) {
     })
     .then(function (user) {
 
-      bcrypt.compare(password, user.password, function (err, result) {     
+      bcrypt.compare(password, user.password, function (err, result) {
         // console.log('result ',result); // boolean
-        if (result) {          
+        if (result) {
 
           req.session.isLoggedIn = true;
           req.session.admin = user.admin;
-          
+
           // logged in successfully
           return res.status(200).json({
             message: "Login successfullly",
             admin: user.admin,
             isLoggedIn: true
           });
-  
+
         } else {
-  
+
           // logged in successfully
           return res.status(401).json("Login Failed");
-  
+
         }
 
       });
-      
+
 
     })
     .catch(function (err) {
@@ -112,7 +114,7 @@ module.exports.adminLogin = function (req, res, next) {
 }
 
 module.exports.adminCustomerGet = function (req, res, next) {
-  
+
   // console.log('login', req.body);
   // res.send('POST');
 
@@ -127,15 +129,32 @@ module.exports.adminCustomerGet = function (req, res, next) {
   contactUs
     .find({})
     .then(function (user) {
-          
-        // logged in successfully
-        return res.status(200).json({user: user});
-  
+
+      const newUser = [];
+
+      _.forEach(user, function (value) {
+        var current_time = new moment(value.createdAt).format("LLLL");
+        newUser.push({
+          current_time: current_time,         
+          title: value.title,
+          email: value.email,
+          comment: value.comment,
+          phone: value.phone
+        });
+
+      });
+
+      // console.log('newArr', newArr);
+      
+      // logged in successfully
+      return res.status(200).json({
+        user: newUser
+      });
 
     })
     .catch(function (err) {
 
-      res.send(err)
+      res.send(err);
 
     });
 

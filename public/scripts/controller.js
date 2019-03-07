@@ -125,7 +125,7 @@
       })
       .then(function (response) {
 
-        vm.contacts = response.data;
+        vm.contacts = response.data.user;
 
         // resetting the fields
         // vm.email = vm.password = '';

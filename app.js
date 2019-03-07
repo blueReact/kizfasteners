@@ -5,6 +5,9 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const config = require('config');
+const helmet = require('helmet');
+const favicon = require('serve-favicon');
+const compression = require('compression');
 
 const port = process.env.PORT || 3000;
 const app = express();
@@ -23,6 +26,11 @@ mongoose.connect(config.get('mlab.dbName'), {
   console.log('Couldn\'t connect to mongodb!', err);
 });
 
+
+/*
+ * middlewares 
+ */
+app.use(helmet());
 // parse epplication/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({
   extended: false
@@ -37,8 +45,12 @@ app.use(session({
   saveUninitialized: false
 }));
 
+app.use(compression()); 
+
 // serving static files
 app.use(express.static(path.join(__dirname, "public")));
+
+app.use(favicon(path.join(__dirname, "public", "images", "node.ico")));
 
 /*
  * routes

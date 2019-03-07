@@ -1,5 +1,23 @@
-dashboard
-<div ng-init="vm.getContact()">
+<div class="dashboard-container" ng-init="vm.getContact()">
 
-  <pre>{{vm.contacts | json}} </pre>
+  <!-- <pre>{{vm.contacts | json}} </pre> -->
+
+  <h1>Contacts Page</h1>
+
+  <form>
+    <div class="form-group">
+      <label for="text">Search contacts</label>
+      <input type="text" class="form-control" placeholder="Search by username / email / phone / date" ng-model="search">
+    </div>
+  </form>
+
+  <!-- contact list -->
+  <ul class="contact-list" ng-repeat="contacts in vm.contacts| filter: search">
+    <li><span>Title:</span> {{contacts.title}}</li>
+    <li><span>Email:</span> {{contacts.email}}</li>
+    <li><span>Phone:</span> {{contacts.phone}}</li>
+    <li><span>Comment:</span> {{contacts.comment}}</li>
+    <li><span>Contacted me on:</span> {{contacts.current_time}}</li>
+  </ul>
+
 </div>

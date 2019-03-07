@@ -1,0 +1,38 @@
+/*
+* global properties
+*/
+
+ul{
+    padding: 0;
+}
+
+ul > li {
+    list-style: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 23px;
+}
+/*
+* overriding bootstrap properties
+*/
+
+.center-block {
+    float: none !important
+}
+
+
+/*
+* dashboard-container
+*/
+
+.dashboard-container .contact-list {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.dashboard-container .contact-list > li > span{
+    font-weight: bold;
+}
