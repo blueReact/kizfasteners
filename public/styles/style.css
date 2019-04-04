@@ -2,18 +2,26 @@
 * global properties
 */
 
-ul{
+ul {
     padding: 0;
 }
 
-ul > li {
+ul>li {
     list-style: none;
 }
 
 h1 {
-    text-align: center;
-    font-size: 23px;
+    font-size: 24px;
 }
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
 /*
 * overriding bootstrap properties
 */
@@ -22,17 +30,32 @@ h1 {
     float: none !important
 }
 
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+
+/*
+* banner
+*/
+.banner {
+    margin-bottom: 20px;
+}
 
 /*
 * dashboard-container
 */
-
 .dashboard-container .contact-list {
     border: 1px solid #dddddd;
     border-radius: 5px;
     padding: 15px;
 }
 
-.dashboard-container .contact-list > li > span{
+.dashboard-container .contact-list>li>span {
     font-weight: bold;
 }
