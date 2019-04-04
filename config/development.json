@@ -1,6 +1,6 @@
 {
   "name": "Express running on Dev",
   "mlab": {
-    "dbName": "mongodb+srv://kizfasteners:Kiz2019@kizfastners-kfeyc.mongodb.net/test"
+    "dbName": "mongodb+srv://kizfasteners:<password>@cluster0-kfeyc.mongodb.net/test"
   }
 }
