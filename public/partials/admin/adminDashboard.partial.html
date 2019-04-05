@@ -13,10 +13,11 @@
 
   <!-- contact list -->
   <ul class="contact-list" ng-repeat="contacts in vm.contacts| filter: search">
-    <li><span>Title:</span> {{contacts.title}}</li>
+    <li><span>Username:</span> {{contacts.username}}</li>
+    <li><span>Companyname:</span> {{contacts.companyname}}</li>
     <li><span>Email:</span> {{contacts.email}}</li>
     <li><span>Phone:</span> {{contacts.phone}}</li>
-    <li><span>Comment:</span> {{contacts.comment}}</li>
+    <li><span>Message:</span> {{contacts.message}}</li>
     <li><span>Contacted me on:</span> {{contacts.current_time}}</li>
   </ul>
 

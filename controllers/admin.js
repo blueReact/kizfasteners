@@ -136,9 +136,10 @@ module.exports.adminCustomerGet = function (req, res, next) {
         var current_time = new moment(value.createdAt).format("LLLL");
         newUser.push({
           current_time: current_time,         
-          title: value.title,
+          username: value.username,
+          companyname: value.companyname,
           email: value.email,
-          comment: value.comment,
+          message: value.message,
           phone: value.phone
         });
 

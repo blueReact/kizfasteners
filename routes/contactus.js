@@ -9,8 +9,8 @@ const contactusController = require('../controllers/contactus')
 // POST /api/contactus
 router.post('/contactus', [
 
-  // title
-  check('title')
+  // username
+  check('username')
     .not().isEmpty()
     .withMessage('Field cannot be empty!')
     .isLength({
@@ -20,6 +20,14 @@ router.post('/contactus', [
     .withMessage('must be between 5 and 30 chars long')
     .matches(/[a-zA-Z]/)
     .withMessage("Username field should only contain alphabets!")
+    .trim(),
+  
+  // Company Name  
+  check('companyname')   
+    .isLength({      
+      max: 50
+    })
+    .withMessage('must be less than 50 chars long')  
     .trim(),
 
   // email
@@ -39,8 +47,8 @@ router.post('/contactus', [
     .withMessage('must be 10 chars long')
     .trim(),
 
-  // comment
-  check('comment')
+  // message
+  check('message')
     .not().isEmpty()
     .withMessage('Field cannot be empty!')
     .isLength({

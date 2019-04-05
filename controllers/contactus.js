@@ -16,17 +16,19 @@ module.exports.post = function (req, res, next) {
 
   // console.log(req.body);
 
-  const title = req.body.title;
+  const username = req.body.username;
+  const companyname = req.body.companyname;
   const email = req.body.email;
   const phone = req.body.phone;
-  const comment = req.body.comment;
+  const message = req.body.message;
 
   contactUs
     .create({
-      title: title,
+      username: username,
+      companyname: companyname,
       email: email,
       phone: phone,
-      comment: comment
+      message: message
     })
     .then(function (result) {
 

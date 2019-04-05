@@ -23,10 +23,11 @@
           method: 'post',
           url: '/api/contactus',
           data: {
-            'title': vm.username,
+            'username': vm.username,
+            'companyname': vm.companyname,
             'email': vm.email,
             'phone': vm.phone,
-            'comment': vm.comment
+            'message': vm.message
           },
           headers: {
             'Content-Type': 'application/json' //,
@@ -38,12 +39,13 @@
           vm.response = response.data;
 
           // resetting the fields
-          vm.username = vm.email = vm.phone = vm.comment = '';
+          vm.username = vm.companyname = vm.email = vm.phone = vm.message = '';
           console.log(vm.response);
 
         })
         .catch(function (err) {
           console.log(err);
+          vm.error = err;
         });
     }
 

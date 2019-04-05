@@ -2,9 +2,12 @@ const mongoose = require('mongoose');
 const Schema = require("mongoose").Schema;
 
 var contactUsSchema = new Schema({
-  title: {
+  username: {
     type: String,
     required: true
+  },
+  companyname: {
+    type: String,    
   },
   email: {
     type: String,
@@ -14,7 +17,7 @@ var contactUsSchema = new Schema({
     type: Number,
     required: true
   },
-  comment: {
+  message: {
     type: String,
     required: true
   }
