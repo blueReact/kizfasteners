@@ -74,3 +74,15 @@ h3 {
 .dashboard-container .contact-list>li>span {
     font-weight: bold;
 }
+
+/*
+* footer
+*/
+footer {
+    text-align: center;
+    background-color: #272727;
+    padding: 20px 0;
+    color: #fff;
+    margin-top: 20px;
+}
+

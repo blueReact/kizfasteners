@@ -55,11 +55,13 @@
 
 <body ng-app="myApp" ng-strict-di>
 
-  <div class="container-fluid" ng-cloak ng-controller="mainController as vm">
+  <div ng-cloak ng-controller="mainController as vm">
 
     <div ng-include="'partials/header/header.partial.html'"></div>
 
-    <div ng-view></div>
+    <div ng-view class="container-fluid"></div>
+
+    <div ng-include="'partials/footer/footer.partial.html'"></div>
 
   </div>
 
