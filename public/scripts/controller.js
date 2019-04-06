@@ -13,10 +13,12 @@
     var vm = this;
     vm.fourNotFour = 'Page not found - 404';
     vm.username = '';
-
+    vm.hideError = true;
+    vm.success = false;
 
     vm.contactUs = function () {
 
+      vm.hideError = false;
       console.log(vm.username);
 
       $http({
@@ -40,6 +42,9 @@
 
           // resetting the fields
           vm.username = vm.companyname = vm.email = vm.phone = vm.message = '';
+          vm.hideError = true;
+          vm.success = true;
+          
           console.log(vm.response);
 
         })
@@ -47,6 +52,8 @@
           console.log(err);
           vm.error = err;
         });
+
+        
     }
 
     vm.adminRegister = function () {
@@ -117,29 +124,29 @@
 
 
     vm.getContact = function () {
-    $http({
-        method: 'get',
-        url: '/api/admin',
-        headers: {
-          'Content-Type': 'application/json',
-          //Authorization: token
-        }
-      })
-      .then(function (response) {
+      $http({
+          method: 'get',
+          url: '/api/admin',
+          headers: {
+            'Content-Type': 'application/json',
+            //Authorization: token
+          }
+        })
+        .then(function (response) {
 
-        vm.contacts = response.data.user;
+          vm.contacts = response.data.user;
 
-        // resetting the fields
-        // vm.email = vm.password = '';
+          // resetting the fields
+          // vm.email = vm.password = '';
 
-        $location.path("/admindashboard")
+          $location.path("/admindashboard")
 
-      })
-      .catch(function (err) {
-        console.log(err);
-      });
+        })
+        .catch(function (err) {
+          console.log(err);
+        });
 
-  };
+    };
   };
 
 })();

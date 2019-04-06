@@ -53,11 +53,11 @@ router.post('/contactus', [
     .withMessage('Field cannot be empty!')
     .isLength({
       min: 5,
-      max: 2000
+      max: 1000
     })
-    .withMessage('must be between 5 and 30 chars long')
+    .withMessage('must be between 5 and 1000 chars long')
     .matches(/[a-zA-Z]/)
-    .withMessage("Comment field should only contain alphabets!")
+    .withMessage("Message field should only contain alphabets!")
     .trim()
 
 ], contactusController.post);
