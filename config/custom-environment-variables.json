@@ -1,4 +1,7 @@
 {
-  "mlab": "kiz_dbName",
-  "kiz_env": "kiz_env"
+  "name": "Express running on Prod",
+  "services": {
+    "dbName": "mongodb+srv://kizfasteners:Kiz2019@cluster0-kfeyc.mongodb.net/test",
+    "sendGridApiKey":"sendGridApiKey"
+  }
 }

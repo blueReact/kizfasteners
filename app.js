@@ -16,9 +16,6 @@ const app = express();
 const contactusRoutes = require('./routes/contactus');
 const adminRoutes = require('./routes/admin');
 
-
-console.log(config.get('kiz_env'));
-
 // mongoose
 // mongodb://localhost/kizfasteners
 mongoose.connect(config.get('services.dbName'), {
