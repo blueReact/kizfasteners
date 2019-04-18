@@ -44,8 +44,10 @@
           vm.username = vm.companyname = vm.email = vm.phone = vm.message = '';
           vm.hideError = true;
           vm.success = true;
-          
+
           console.log(vm.response);
+
+          refresh();
 
         })
         .catch(function (err) {
@@ -53,7 +55,7 @@
           vm.error = err;
         });
 
-        
+
     }
 
     vm.adminRegister = function () {
@@ -122,8 +124,8 @@
         });
     }
 
+    var refresh = function () {
 
-    vm.getContact = function () {
       $http({
           method: 'get',
           url: '/api/admin',
@@ -139,14 +141,17 @@
           // resetting the fields
           // vm.email = vm.password = '';
 
-          $location.path("/admindashboard")
+          // $location.path("/admindashboard") ?? not sure why
 
         })
         .catch(function (err) {
           console.log(err);
         });
 
-    };
+    }
+
+    refresh();
+    
   };
 
 })();
