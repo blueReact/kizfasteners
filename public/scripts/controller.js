@@ -13,20 +13,23 @@
     var vm = this;
     vm.fourNotFour = 'Page not found - 404';
     vm.username = '';
-
+    vm.hideError = true;
+    vm.success = false;
 
     vm.contactUs = function () {
 
+      vm.hideError = false;
       console.log(vm.username);
 
       $http({
           method: 'post',
           url: '/api/contactus',
           data: {
-            'title': vm.username,
+            'username': vm.username,
+            'companyname': vm.companyname,
             'email': vm.email,
             'phone': vm.phone,
-            'comment': vm.comment
+            'message': vm.message
           },
           headers: {
             'Content-Type': 'application/json' //,
@@ -38,13 +41,21 @@
           vm.response = response.data;
 
           // resetting the fields
-          vm.username = vm.email = vm.phone = vm.comment = '';
+          vm.username = vm.companyname = vm.email = vm.phone = vm.message = '';
+          vm.hideError = true;
+          vm.success = true;
+
           console.log(vm.response);
+
+          refresh();
 
         })
         .catch(function (err) {
           console.log(err);
+          vm.error = err;
         });
+
+
     }
 
     vm.adminRegister = function () {
@@ -113,31 +124,34 @@
         });
     }
 
+    var refresh = function () {
 
-    vm.getContact = function () {
-    $http({
-        method: 'get',
-        url: '/api/admin',
-        headers: {
-          'Content-Type': 'application/json',
-          //Authorization: token
-        }
-      })
-      .then(function (response) {
+      $http({
+          method: 'get',
+          url: '/api/admin',
+          headers: {
+            'Content-Type': 'application/json',
+            //Authorization: token
+          }
+        })
+        .then(function (response) {
 
-        vm.contacts = response.data.user;
+          vm.contacts = response.data.user;
 
-        // resetting the fields
-        // vm.email = vm.password = '';
+          // resetting the fields
+          // vm.email = vm.password = '';
 
-        $location.path("/admindashboard")
+          // $location.path("/admindashboard") ?? not sure why
 
-      })
-      .catch(function (err) {
-        console.log(err);
-      });
+        })
+        .catch(function (err) {
+          console.log(err);
+        });
 
-  };
+    }
+
+    refresh();
+    
   };
 
 })();

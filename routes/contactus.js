@@ -9,17 +9,25 @@ const contactusController = require('../controllers/contactus')
 // POST /api/contactus
 router.post('/contactus', [
 
-  // title
-  check('title')
+  // username
+  check('username')
     .not().isEmpty()
     .withMessage('Field cannot be empty!')
     .isLength({
-      min: 5,
+      min: 4,
       max: 30
     })
-    .withMessage('must be between 5 and 30 chars long')
+    .withMessage('must be between 4 and 30 chars long')
     .matches(/[a-zA-Z]/)
     .withMessage("Username field should only contain alphabets!")
+    .trim(),
+  
+  // Company Name  
+  check('companyname')   
+    .isLength({      
+      max: 50
+    })
+    .withMessage('Field must be less than 50 chars long')  
     .trim(),
 
   // email
@@ -36,20 +44,20 @@ router.post('/contactus', [
     .not().isEmpty()
     .withMessage('Field cannot be empty!')
     .isMobilePhone(['en-IN'])
-    .withMessage('must be 10 chars long')
+    .withMessage('Field must be 10 chars long')
     .trim(),
 
-  // comment
-  check('comment')
+  // message
+  check('message')
     .not().isEmpty()
     .withMessage('Field cannot be empty!')
     .isLength({
       min: 5,
-      max: 2000
+      max: 1000
     })
-    .withMessage('must be between 5 and 30 chars long')
-    .matches(/[a-zA-Z]/)
-    .withMessage("Comment field should only contain alphabets!")
+    .withMessage('Field must be between 5 and 1000 chars long')
+    .matches(/[a-zA-Z0-9]/)
+    .withMessage("Field should only contain alphabets and Numbers!")
     .trim()
 
 ], contactusController.post);

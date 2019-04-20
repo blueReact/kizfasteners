@@ -18,7 +18,7 @@ const adminRoutes = require('./routes/admin');
 
 // mongoose
 // mongodb://localhost/kizfasteners
-mongoose.connect(config.get('mlab.dbName'), {
+mongoose.connect(config.get('services.dbName'), {
   useNewUrlParser: true
 }).then(function () {
   console.log('Connected to...');
@@ -49,7 +49,6 @@ app.use(compression());
 
 // serving static files
 app.use(express.static(path.join(__dirname, "public")));
-
 app.use(favicon(path.join(__dirname, "public", "images", "node.ico")));
 
 /*

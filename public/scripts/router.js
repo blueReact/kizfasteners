@@ -12,8 +12,18 @@ function config($routeProvider, $locationProvider) {
       controller: 'mainController',
       controllerAs: 'vm'
     })
+    .when("/aboutus", {
+      templateUrl: "partials/aboutus/aboutus.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/aerospace-fasteners", {
+      templateUrl: "partials/products/aerospace-fasteners.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
     .when("/contactus", {
-      templateUrl: "partials/contactus.partial.html",
+      templateUrl: "partials/contactus/contactus.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
