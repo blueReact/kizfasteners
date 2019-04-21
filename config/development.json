@@ -1,7 +1,0 @@
-{
-  "name": "Express running on Dev",
-  "services": {
-    "dbName": "mongodb+srv://kizfasteners:Kiz2019@cluster0-kfeyc.mongodb.net/test",
-    "sendGridApiKey":"sendGridApiKey"
-  }
-}
