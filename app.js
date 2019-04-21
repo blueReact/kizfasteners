@@ -52,7 +52,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(favicon(path.join(__dirname, "public", "images", "node.ico")));
 
 // prerender
-app.use(require('prerender-node').set('prerenderServiceUrl', 'http://localhost:3000'));
+app.use(require('prerender-node').set('prerenderServiceUrl', 'http://www.kizfasteners.com'));
 
 /*
  * routes
