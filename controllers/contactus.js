@@ -54,7 +54,7 @@ module.exports.post = function (req, res, next) {
         html: `<p style="font-size:16px;color:#555">Username ${result.username}</p>  
         <p style="font-size:16px;color:#555">email</p> ${result.email}
         <p style="font-size:16px;color:#555">message</p> ${result.message}.
-        <p style="font-size:16px;color:#555">phone</p> ${result.message}`
+        <p style="font-size:16px;color:#555">phone</p> ${result.phone}`
       };
 
       // success
