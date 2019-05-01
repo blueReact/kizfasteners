@@ -42,6 +42,16 @@ function config($routeProvider, $locationProvider) {
       controller: 'mainController',
       controllerAs: 'vm'
     })
+    .when("/distributors", {
+      templateUrl: "partials/distributors/distributors.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/inner-page", {
+      templateUrl: "partials/innerPages/innerPage.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
     .otherwise({
       templateUrl: 'partials/error/404.partial.html',
       controller: 'mainController',
