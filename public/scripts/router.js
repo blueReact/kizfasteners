@@ -48,7 +48,7 @@ function config($routeProvider, $locationProvider) {
       controllerAs: 'vm'
     })
     .when("/inner-page", {
-      templateUrl: "partials/innerPages/innerPage.partial.html",
+      templateUrl: "partials/metricfasteners/metricfasteners.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
