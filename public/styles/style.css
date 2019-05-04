@@ -2,13 +2,6 @@
 * global properties
 */
 
-ul {
-    padding: 0;
-}
-
-ul>li {
-    list-style: none;
-}
 
 h1 {
     font-size: 24px;
@@ -21,6 +14,15 @@ h2 {
 h3 {
     font-size: 16px;
 }
+
+ul {
+    padding: 0;
+}
+
+ul>li {
+    list-style: none;
+}
+
 
 /*
 * overriding bootstrap properties
@@ -55,9 +57,28 @@ h3 {
     bottom: 30px
 }
 
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    border: 1px solid #ddd;
+}
+
+table thead tr th {
+    text-align: center;
+}
+
+.dropdown-menu {
+    min-width: 700px;
+    padding: 15px 0;
+}
+
 /*
 * banner
 */
+
 .banner {
     margin-bottom: 20px;
 }
@@ -65,6 +86,7 @@ h3 {
 /*
 * dashboard-container
 */
+
 .dashboard-container .contact-list {
     border: 1px solid #dddddd;
     border-radius: 5px;
@@ -75,9 +97,36 @@ h3 {
     font-weight: bold;
 }
 
+
+/*
+*   inner pages
+*/
+
+.nav li h1 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+table {
+    text-align: center;
+}
+
+table thead tr {
+    color: #ffffff;
+}
+
+table thead tr:nth-child(1) th {
+    background-color: dodgerblue;
+}
+
+table thead tr:nth-child(n+2) th {
+    background-color: cornflowerblue;
+}
+
 /*
 * footer
 */
+
 footer {
     text-align: center;
     background-color: #272727;
@@ -86,3 +135,13 @@ footer {
     margin-top: 20px;
 }
 
+
+/*
+* Portable devices 
+*/
+
+@media only screen and (max-width: 1000px) {
+    .dropdown-menu {
+        min-width: 100%;
+    }
+}
