@@ -48,12 +48,26 @@
     }
   </style>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140449514-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-140449514-1');
+  </script>
+
+
 </head>
 
 <body ng-app="myApp" ng-strict-di>
 
   <div ng-cloak ng-controller="mainController as vm">
-   
+
     <div ng-include="'partials/header/header.partial.html'"></div>
 
     <div ng-view class="container-fluid"></div>
