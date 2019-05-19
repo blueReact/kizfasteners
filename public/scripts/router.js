@@ -112,11 +112,37 @@ function config($routeProvider, $locationProvider) {
       controllerAs: 'vm'
     })
 
+    // Imperial Fasteners
+    // Holo-Krome    
+    .when("/Holo-Krome-B7-Inch-Heavy-Hex-Cap-Screws", {
+      templateUrl: "partials/imperialfasteners/Holo-Krome/Holo-Krome-B7-Inch-Heavy-Hex-Cap-Screws.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    }) 
+    .when("/holo-krome-grade-9-heavy-hex-cap-screw-imperial", {
+      templateUrl: "partials/imperialfasteners/Holo-Krome/holo-krome-grade-9-heavy-hex-cap-screw-imperial.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    }) 
+    .when("/holo-krome-12-point-flange-screws-imperial", {
+      templateUrl: "partials/imperialfasteners/Holo-Krome/holo-krome-12-point-flange-screws-imperial.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    }) 
+    .when("/holo-krome-hex-cap-screw-silicon-bronze", {
+      templateUrl: "partials/imperialfasteners/Holo-Krome/holo-krome-hex-cap-screw-silicon-bronze.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    
+
     .otherwise({
       templateUrl: 'partials/error/404.partial.html',
       controller: 'mainController',
       controllerAs: 'vm'
     });
+
+    
 
   // // removes URL hash
   // $locationProvider.html5Mode(true);
