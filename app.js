@@ -9,7 +9,7 @@ const helmet = require('helmet');
 const favicon = require('serve-favicon');
 const compression = require('compression');
 
-const livereload = require('livereload');
+// const livereload = require('livereload');
 
 const port = process.env.PORT || 3000;
 const app = express();
