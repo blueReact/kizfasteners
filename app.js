@@ -9,7 +9,7 @@ const helmet = require('helmet');
 const favicon = require('serve-favicon');
 const compression = require('compression');
 
-// const livereload = require('livereload');
+const livereload = require('livereload');
 
 const port = process.env.PORT || 3000;
 const app = express();
@@ -53,10 +53,10 @@ app.use(compression());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(favicon(path.join(__dirname, "public", "images", "node.ico")));
 
-// var server = livereload.createServer({
-//   exts: ['html', 'css', 'js', 'png', 'jpg']
-// });
-// server.watch(path.join(__dirname, "public"));
+var server = livereload.createServer({
+  exts: ['html', 'css', 'js', 'png', 'jpg']
+});
+server.watch(path.join(__dirname, "public"));
 
 // prerender
 app.use(require('prerender-node').set('prerenderServiceUrl', 'http://www.kizfasteners.com'));

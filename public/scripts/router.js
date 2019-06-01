@@ -50,86 +50,86 @@ function config($routeProvider, $locationProvider) {
 
     // DIN-931-ISO-4014-Partially-Threaded-Hex-Cap-Screw
     .when("/8-8-Grade-Bare-Steel-Zinc-Plated", {
-      templateUrl: "partials/metricfasteners/DIN-931-ISO-4014-Partially-Threaded-Hex-Cap-Screw/8-8-Grade-Bare-Steel-Zinc-Plated.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-931-ISO-4014-Partially-Threaded-Hex-Cap-Screw/8-8-Grade-Bare-Steel-Zinc-Plated.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
     .when("/8-8-Grade-Hot-Dip-Galvanized-ISO-FIT", {
-      templateUrl: "partials/metricfasteners/DIN-931-ISO-4014-Partially-Threaded-Hex-Cap-Screw/8-8-Grade-Hot-Dip-Galvanized-ISO-FIT.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-931-ISO-4014-Partially-Threaded-Hex-Cap-Screw/8-8-Grade-Hot-Dip-Galvanized-ISO-FIT.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
     .when("/10-9-Grade-Bare-Steel-Yellow-Zinc-Plated", {
-      templateUrl: "partials/metricfasteners/DIN-931-ISO-4014-Partially-Threaded-Hex-Cap-Screw/10-9-Grade-Bare-Steel-Yellow-Zinc-Plated.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-931-ISO-4014-Partially-Threaded-Hex-Cap-Screw/10-9-Grade-Bare-Steel-Yellow-Zinc-Plated.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
     .when("/10-9-Grade-Bare-Steel-with-Extended-Threads", {
-      templateUrl: "partials/metricfasteners/DIN-931-ISO-4014-Partially-Threaded-Hex-Cap-Screw/10-9-Grade-Bare-Steel-with-Extended-Threads.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-931-ISO-4014-Partially-Threaded-Hex-Cap-Screw/10-9-Grade-Bare-Steel-with-Extended-Threads.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
     .when("/12-9-Grade-Bare-Steel", {
-      templateUrl: "partials/metricfasteners/DIN-931-ISO-4014-Partially-Threaded-Hex-Cap-Screw/12-9-Grade-Bare-Steel.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-931-ISO-4014-Partially-Threaded-Hex-Cap-Screw/12-9-Grade-Bare-Steel.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
     .when("/A2-A4-Stainless-Steel", {
-      templateUrl: "partials/metricfasteners/DIN-931-ISO-4014-Partially-Threaded-Hex-Cap-Screw/A2-A4-Stainless-Steel.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-931-ISO-4014-Partially-Threaded-Hex-Cap-Screw/A2-A4-Stainless-Steel.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
 
     // DIN-933-ISO-4017-Fully-Threaded-Hex-Cap-Screw
     .when("/8-8-Grade-Bare-Steel-Zinc-Plated", {
-      templateUrl: "partials/metricfasteners/DIN-933-ISO-4017-Fully-Threaded-Hex-Cap-Screw/8-8-Grade-Bare-Steel-Zinc-Plated.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-933-ISO-4017-Fully-Threaded-Hex-Cap-Screw/8-8-Grade-Bare-Steel-Zinc-Plated.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
     .when("/8-8-Grade-Hot-Dip-Galvanized-ISO-FIT", {
-      templateUrl: "partials/metricfasteners/DIN-933-ISO-4017-Fully-Threaded-Hex-Cap-Screw/8-8-Grade-Hot-Dip-Galvanized-ISO-FIT.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-933-ISO-4017-Fully-Threaded-Hex-Cap-Screw/8-8-Grade-Hot-Dip-Galvanized-ISO-FIT.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
     .when("/10-9-Grade-Bare-Steel-Yellow-Zinc-Plated", {
-      templateUrl: "partials/metricfasteners/DIN-933-ISO-4017-Fully-Threaded-Hex-Cap-Screw/10-9-Grade-Bare-Steel-Yellow-Zinc-Plated.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-933-ISO-4017-Fully-Threaded-Hex-Cap-Screw/10-9-Grade-Bare-Steel-Yellow-Zinc-Plated.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
     .when("/12-9-Grade-Bare-Steel", {
-      templateUrl: "partials/metricfasteners/DIN-933-ISO-4017-Fully-Threaded-Hex-Cap-Screw/12-9-Grade-Bare-Steel.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-933-ISO-4017-Fully-Threaded-Hex-Cap-Screw/12-9-Grade-Bare-Steel.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
     .when("/A2-A4-Stainless-Steel", {
-      templateUrl: "partials/metricfasteners/DIN-933-ISO-4017-Fully-Threaded-Hex-Cap-Screw/A2-A4-Stainless-Steel.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-933-ISO-4017-Fully-Threaded-Hex-Cap-Screw/A2-A4-Stainless-Steel.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
     .when("/Brass", {
-      templateUrl: "partials/metricfasteners/DIN-933-ISO-4017-Fully-Threaded-Hex-Cap-Screw/Brass.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-933-ISO-4017-Fully-Threaded-Hex-Cap-Screw/Brass.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
 
     // DIN 960 / ISO 8765 Partially Threaded Hex Cap Screw
     .when("/8-8-Grade-Bare-Zinc-1st-fine", {
-      templateUrl: "partials/metricfasteners/DIN-960-ISO-8765-Partially-Threaded-Hex-Cap-Screw/8.8-Grade-Bare-Zinc-1st-fine.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-960-ISO-8765-Partially-Threaded-Hex-Cap-Screw/8.8-Grade-Bare-Zinc-1st-fine.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
     .when("/8-8-Grade-Bare-Zinc-2nd-fine", {
-      templateUrl: "partials/metricfasteners/DIN-960-ISO-8765-Partially-Threaded-Hex-Cap-Screw/8-8-Grade-Bare-Zinc-2nd-fine.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-960-ISO-8765-Partially-Threaded-Hex-Cap-Screw/8-8-Grade-Bare-Zinc-2nd-fine.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
     .when("/10-9-Grade-Bare-Zinc-1st-fine", {
-      templateUrl: "partials/metricfasteners/DIN-960-ISO-8765-Partially-Threaded-Hex-Cap-Screw/10-9-Grade-Bare-Zinc-1st-fine.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-960-ISO-8765-Partially-Threaded-Hex-Cap-Screw/10-9-Grade-Bare-Zinc-1st-fine.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
     .when("/10-9-Grade-Bare-2nd-fine", {
-      templateUrl: "partials/metricfasteners/DIN-960-ISO-8765-Partially-Threaded-Hex-Cap-Screw/10-9-Grade-Bare-2nd-fine.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-960-ISO-8765-Partially-Threaded-Hex-Cap-Screw/10-9-Grade-Bare-2nd-fine.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
@@ -137,45 +137,179 @@ function config($routeProvider, $locationProvider) {
 
     // DIN 961 / ISO 8676 Fully Threaded Hex Cap Screw (Fine Thread)
     .when("/8-8-Grade-Bare-Zinc-1st-fine", {
-      templateUrl: "partials/metricfasteners/DIN-961-ISO-8676-Fully-Threaded-Hex-Cap-Screw-Fine-Thread/8-8-Grade-Bare-Zinc-1st-fine.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-961-ISO-8676-Fully-Threaded-Hex-Cap-Screw-Fine-Thread/8-8-Grade-Bare-Zinc-1st-fine.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
     .when("/8-8-Grade-Bare-Zinc-2nd-fine", {
-      templateUrl: "partials/metricfasteners/DIN-961-ISO-8676-Fully-Threaded-Hex-Cap-Screw-Fine-Thread/8-8-Grade-Bare-Zinc-2nd-fine.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-961-ISO-8676-Fully-Threaded-Hex-Cap-Screw-Fine-Thread/8-8-Grade-Bare-Zinc-2nd-fine.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
     .when("/10-9-Grade-Bare-2nd-fine", {
-      templateUrl: "partials/metricfasteners/DIN-961-ISO-8676-Fully-Threaded-Hex-Cap-Screw-Fine-Thread/10-9-Grade-Bare-2nd-fine.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-961-ISO-8676-Fully-Threaded-Hex-Cap-Screw-Fine-Thread/10-9-Grade-Bare-2nd-fine.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
     .when("/10-9-Grade-Bare-Zinc-1st-fine", {
-      templateUrl: "partials/metricfasteners/DIN-961-ISO-8676-Fully-Threaded-Hex-Cap-Screw-Fine-Thread/10-9-Grade-Bare-Zinc-1st-fine.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-961-ISO-8676-Fully-Threaded-Hex-Cap-Screw-Fine-Thread/10-9-Grade-Bare-Zinc-1st-fine.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
 
     // DIN 6921 Hex Flange Bolt (Non-Serrated)
     .when("/10-9-Grade-Yellow-Zinc-Plated", {
-      templateUrl: "partials/metricfasteners/DIN-6921-Hex-Flange-Bolt-Non-Serrated/10-9-Grade-Yellow-Zinc-Plated.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-6921-Hex-Flange-Bolt-Non-Serrated/10-9-Grade-Yellow-Zinc-Plated.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
 
     // Japanese Industrial Standard (JIS) Hex Fasteners
     .when("/JIS-B1180-8-8-Small-Head-Zinc-Plated", {
-      templateUrl: "partials/metricfasteners/Japanese-Industrial-Standard-JIS-Hex-Fasteners/JIS-B1180-8-8-Small-Head-Zinc-Plated.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/Japanese-Industrial-Standard-JIS-Hex-Fasteners/JIS-B1180-8-8-Small-Head-Zinc-Plated.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
     .when("/JIS-B1189-10-9-Small-Head-Hex-Flange-Zinc-Plated", {
-      templateUrl: "partials/metricfasteners/Japanese-Industrial-Standard-JIS-Hex-Fasteners/JIS-B1189-10-9-Small-Head-Hex-Flange-Zinc-Plated.partial.html",
+      templateUrl: "partials/metricfasteners/hexHeadFasteners/Japanese-Industrial-Standard-JIS-Hex-Fasteners/JIS-B1189-10-9-Small-Head-Hex-Flange-Zinc-Plated.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
     })
 
+
+    // DIN 912 / ISO 4762 Socket Head Cap Screws
+    .when("/8-8-Grade-Bare-Steel-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/DIN-912-ISO-4762-Socket-Head-Cap-Screws/8-8-Grade-Bare-Steel-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/12-9-Grade-Bare-Steel-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/DIN-912-ISO-4762-Socket-Head-Cap-Screws/12-9-Grade-Bare-Steel-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/12-9-Grade-Bare-Steel-FINE-Thread", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/DIN-912-ISO-4762-Socket-Head-Cap-Screws/12-9-Grade-Bare-Steel-FINE-Thread.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/A2-A4-Stainless-Steel", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/DIN-912-ISO-4762-Socket-Head-Cap-Screws/A2-A4-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    // ISO 7380 Button Head Socket
+    .when("/10-9-Grade-Bare-Steel-Zinc-Plated-Head-Socket", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/ISO-7380-Button-Head-Socket/10-9-Grade-Bare-Steel-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/A2-Stainless-Steel-Head-Socket", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/ISO-7380-Button-Head-Socket/A2-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    // ISO 7379 Shoulder Bolt    
+    .when("/10-9-Grade-Bare-Steel-Zinc-Plated-Shoulder-Bolt", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/DIN-7991-ISO-10642-Flat-Head-Countersunk-Socket/12-9-Grade-Bare-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/A2-Stainless-Steel-Shoulder-Bolt", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/DIN-7991-ISO-10642-Flat-Head-Countersunk-Socket/A2-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    // Set Screws
+    .when("/DIN-913-Flat-Point", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/Set-Screws/DIN-913-Flat-Point.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/DIN-914-Cone-Point", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/Set-Screws/DIN-914-Cone-Point.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/DIN-915-Dog-Point", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/Set-Screws/DIN-915-Dog-Point.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/DIN-916-ISO-4029-Cup-Point", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/Set-Screws/DIN-916-ISO-4029-Cup-Point.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/A2-A4-Stainless-Steel", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/Set-Screws/A2-A4-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/DIN-479-8-8-Square-Head", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/Set-Screws/DIN-479-8-8-Square-Head.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+
+    // Low Head Socket Cap Screws
+    .when("/DIN-6912-8-8-Bare-Steel-with-Guide-Point", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/Low-Head-Socket-Cap-Screws/DIN-6912-8-8-Bare-Steel-with-Guide-Point.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/DIN-7984-8-8-Bare-Steel", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/Low-Head-Socket-Cap-Screws/DIN-7984-8-8-Bare-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/DIN-7984-10-9-Bare-Steel", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/Low-Head-Socket-Cap-Screws/DIN-7984-10-9-Bare-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/DIN-7984-A2-Stainless-Steel", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/Low-Head-Socket-Cap-Screws/DIN-7984-A2-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    // keys
+    .when("/DIN-911-ISO-2936-Short-Arm-Chrome-Vanadium", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/keys/DIN-911-ISO-2936-Short-Arm-Chrome-Vanadium.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/DIN-911-ISO-2936-Long-Arm-Chrome-Vanadium", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/keys/DIN-911-ISO-2936-Long-Arm-Chrome-Vanadium.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/DIN-6911-Guide-Point-Chrome-Vanadium", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/keys/DIN-6911-Guide-Point-Chrome-Vanadium.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+
+    // Plugs
+    .when("/DIN-906-Hexagon-Socket-Pipe-Plug", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/Plugs/DIN-906-Hexagon-Socket-Pipe-Plug.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/DIN-908-Hexagon-Socket-Screw-Plug", {
+      templateUrl: "partials/metricfasteners/socketHeadFasteners/Plugs/DIN-908-Hexagon-Socket-Screw-Plug.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
 
     // Imperial Fasteners
     // Holo-Krome    

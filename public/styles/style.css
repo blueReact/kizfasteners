@@ -129,6 +129,24 @@ table thead tr th {
     color: #ffffff;
 }
 
+
+/*
+* menu
+*/
+.sub-dropdown {
+    display: none;    
+}
+
+.sub-dropdown.active {
+    display: block;
+}
+
+.sub-dropdown-heading {
+    float: left;
+    width: 100%;
+}
+
+
 /*
 * banner
 */
@@ -181,6 +199,8 @@ table thead tr th {
 .nav li h1 {
     font-size: 16px;
     font-weight: bold;
+    margin-bottom: 0;
+    padding: 10px 0;
 }
 
 table {
@@ -212,11 +232,15 @@ footer {
 
 
 /*
-* Portable devices 
+* Media queries && Portable devices 
 */
 
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
     .dropdown-menu {
         min-width: 100%;
     }
+} */
+
+@media only screen and (min-width: 1024px) {
+    
 }

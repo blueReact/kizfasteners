@@ -6,9 +6,9 @@
     .module('myApp')
     .controller('mainController', mainController)
 
-  mainController.$inject = ['$rootScope', '$http', '$location'];
+  mainController.$inject = ['$rootScope', '$http', '$location', '$window'];
 
-  function mainController($rootScope, $http, $location) {
+  function mainController($rootScope, $http, $location, $window) {
 
     var vm = this;
     vm.fourNotFour = 'Page not found - 404';
@@ -150,7 +150,17 @@
 
     }
 
-    refresh();
+    refresh();    
+        
+    // if($( window ).width()>1024) {
+    //   $('.dropdown-menu').css('width', $( window ).width() + 'px');
+    //   $('.dropdown-menu').css('height', ($( window ).height() - 40) + 'px');
+    // }
+    $('.sub-dropdown-heading').hover(function(){
+      // var myEl = angular.element( document.querySelector( '.sub-dropdown' ) );
+      // myEl.toggleClass('active');
+      $(this).find('.sub-dropdown', this).toggleClass('active');
+    });      
     
   };
 
