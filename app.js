@@ -47,7 +47,7 @@ app.use(session({
   saveUninitialized: false
 }));
 
-app.use(compression()); 
+app.use(compression());
 
 // serving static files
 app.use(express.static(path.join(__dirname, "public")));
@@ -71,12 +71,12 @@ app.use('/api', contactusRoutes);
 // admin
 app.use('/api', adminRoutes);
 
-app.use(function(err, req, res, next){
+app.use(function (err, req, res, next) {
 
   console.log(err);
   var err = new Error(err);
   err.code = err.code || 500;
-  
+
   return res.status(err.code).json({
     message: err.message
   });

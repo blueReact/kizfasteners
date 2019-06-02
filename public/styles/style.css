@@ -95,7 +95,7 @@ table thead tr th {
 
 .dropdown-menu {
     min-width: 700px;
-    padding: 15px 0;
+    padding: 15px;
 }
 
 .navbar {
@@ -133,6 +133,11 @@ table thead tr th {
 /*
 * menu
 */
+
+.dropdown-menu.active {
+    display: block;
+}
+
 .sub-dropdown {
     display: none;    
 }

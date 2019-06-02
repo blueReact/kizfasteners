@@ -412,6 +412,99 @@ function config($routeProvider, $locationProvider) {
       controllerAs: 'vm'
     })
 
+    // washer
+    // flat washer
+    .when("/Flat-Washers-by-ID-OD-and-Thickness", {
+      templateUrl: "partials/metricfasteners/washer/flat-washer/Flat-Washers-by-ID-OD-and-Thickness.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-125-ISO-7089-7090-Bare-Steel-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/washer/flat-washer/DIN-125-ISO-7089-7090-Bare-Steel-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-125-ISO-7089-7090-A2-A4-Stainless-Steel", {
+      templateUrl: "partials/metricfasteners/washer/flat-washer/DIN-125-ISO-7089-7090-A2-A4-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-125-ISO-7089-7090-Brass", {
+      templateUrl: "partials/metricfasteners/washer/flat-washer/DIN-125-ISO-7089-7090-Brass.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-126-Bare-Steel-Hot-Dipped-Galvanized-ISO-FIT", {
+      templateUrl: "partials/metricfasteners/washer/flat-washer/DIN-126-Bare-Steel-Hot-Dipped-Galvanized-ISO-FIT.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-433-Small-O-D-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/washer/flat-washer/DIN-433-Small-O-D-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-433-Small-O-D-A2-A4-Stainless-Steel", {
+      templateUrl: "partials/metricfasteners/washer/flat-washer/DIN-433-Small-O-D-A2-A4-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-1440-For-Clevis-Pins-Bare-Steel-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/washer/flat-washer/DIN-1440-For-Clevis-Pins-Bare-Steel-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-6916HV-10-Structural-Bare-Steel-Yellow-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/washer/flat-washer/DIN-6916HV-10-Structural-Bare-Steel-Yellow-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-7349-Thick-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/washer/flat-washer/DIN-7349-Thick-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-7603-Sealing-Copper-Aluminum", {
+      templateUrl: "partials/metricfasteners/washer/flat-washer/DIN-7603-Sealing-Copper-Aluminum.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-7989-Extra-Thick-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/washer/flat-washer/DIN-7989-Extra-Thick-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-9021B-Fender-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/washer/flat-washer/DIN-9021B-Fender-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-9021B-Fender-A2-A4-Stainless-Steel", {
+      templateUrl: "partials/metricfasteners/washer/flat-washer/DIN-9021B-Fender-A2-A4-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/Large-O-D-Car-Body-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/washer/flat-washer/Large-O-D-Car-Body-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+
 
 
     .otherwise({
