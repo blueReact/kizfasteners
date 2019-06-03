@@ -504,6 +504,117 @@ function config($routeProvider, $locationProvider) {
       controllerAs: 'vm'
     })
 
+    // Locking washer
+    .when("/DIN-127B-Spring-Steel-Bare-Steel-Zinc-Plated-Yellow-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/washer/locking-washer/DIN-127B-Spring-Steel-Bare-Steel-Zinc-Plated-Yellow-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-127B-Spring-Steel-Hot-Dipped-Galvanized", {
+      templateUrl: "partials/metricfasteners/washer/locking-washer/DIN-127B-Spring-Steel-Hot-Dipped-Galvanized.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-127B-Alloy-Steel-Lock-Washer-Yellow-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/washer/locking-washer/DIN-127B-Alloy-Steel-Lock-Washer-Yellow-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-127B-A2-A4-Stainless-Steel", {
+      templateUrl: "partials/metricfasteners/washer/locking-washer/DIN-127B-A2-A4-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-127B-Bronze", {
+      templateUrl: "partials/metricfasteners/washer/locking-washer/DIN-127B-Bronze.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-7980-High-Collar-Bare-Steel-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/washer/locking-washer/DIN-7980-High-Collar-Bare-Steel-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-7980-High-Collar-A4-Stainless-Steel", {
+      templateUrl: "partials/metricfasteners/washer/locking-washer/DIN-7980-High-Collar-A4-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-128A-Spring-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/washer/locking-washer/DIN-7980-High-Collar-A4-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+
+    .when("/DIN-6797A-External-Toothed-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/washer/locking-washer/DIN-6797A-External-Toothed-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-6797J-Internal-Toothed-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/washer/locking-washer/DIN-6797J-Internal-Toothed-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-6798V-Serrated-Countersunk-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/washer/locking-washer/DIN-6798V-Serrated-Countersunk-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-6798-Serrated-A2-Stainless-Steel", {
+      templateUrl: "partials/metricfasteners/washer/locking-washer/DIN-6798-Serrated-A2-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-6796-Conical-Spring-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/washer/locking-washer/DIN-6796-Conical-Spring-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/Ribbed-Bare-Steel-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/washer/locking-washer/Ribbed-Bare-Steel-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/NFE-25-511-Contact-Washer-Yellow-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/washer/locking-washer/NFE-25-511-Contact-Washer-Yellow-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/RIPP-LOCK-Lock-Washers", {
+      templateUrl: "partials/metricfasteners/washer/locking-washer/RIPP-LOCK-Lock-Washers.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-2093-Disc-Spring-Carbon-Steel-Chrome-Vanadium", {
+      templateUrl: "partials/metricfasteners/washer/locking-washer/DIN-2093-Disc-Spring-Carbon-Steel-Chrome-Vanadium.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-137A-Curved-Sping-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/washer/locking-washer/DIN-137A-Curved-Sping-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+
 
 
 
