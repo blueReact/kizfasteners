@@ -614,8 +614,127 @@ function config($routeProvider, $locationProvider) {
       controllerAs: 'vm'
     })
 
+    // nuts
+    .when("/DIN-934-Bare-Steel-Zinc-Plated-Hot-Dip-Galvanized", {
+      templateUrl: "partials/metricfasteners/nuts/Hexagon-Nuts/DIN-934-Bare-Steel-Zinc-Plated-Hot-Dip-Galvanized.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
 
+    .when("/DIN-934-Hot-Dip-Galvanized-ISO-FIT", {
+      templateUrl: "partials/metricfasteners/nuts/Hexagon-Nuts/DIN-934-Hot-Dip-Galvanized-ISO-FIT.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
 
+    .when("/DIN-934-A2-A4-Stainless-Steel", {
+      templateUrl: "partials/metricfasteners/nuts/Hexagon-Nuts/DIN-934-A2-A4-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-934-A2-A4-Stainless-Steel", {
+      templateUrl: "partials/metricfasteners/nuts/Hexagon-Nuts/DIN-934-A2-A4-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-934-Brass", {
+      templateUrl: "partials/metricfasteners/nuts/Hexagon-Nuts/DIN-934-Brass.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-6915HV-Structural", {
+      templateUrl: "partials/metricfasteners/nuts/Hexagon-Nuts/DIN-6915HV-Structural.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-936-Jam-Nut", {
+      templateUrl: "partials/metricfasteners/nuts/Hexagon-Nuts/DIN-936-Jam-Nut.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-439-Jam-Nut-A2-Stainless", {
+      templateUrl: "partials/metricfasteners/nuts/Hexagon-Nuts/DIN-439-Jam-Nut-A2-Stainless.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/ASTM-A194-2H", {
+      templateUrl: "partials/metricfasteners/nuts/Hexagon-Nuts/ASTM-A194-2H.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/Hex-Nut-ISO-ANSI-Pattern", {
+      templateUrl: "partials/metricfasteners/nuts/Hexagon-Nuts/Hex-Nut-ISO-ANSI-Pattern.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/Hex-Nut-JIS", {
+      templateUrl: "partials/metricfasteners/nuts/Hexagon-Nuts/Hex-Nut-JIS.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-929-Weld-Nut", {
+      templateUrl: "partials/metricfasteners/nuts/Hexagon-Nuts/DIN-929-Weld-Nut.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-929-Weld-Nut-A2-Stainless", {
+      templateUrl: "partials/metricfasteners/nuts/Hexagon-Nuts/DIN-929-Weld-Nut-A2-Stainless.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    // Locking Nuts
+    .when("/DIN-980-All-Metal", {
+      templateUrl: "partials/metricfasteners/nuts/locking-nuts/DIN-980-All-Metal.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-980-All-Metal-A2-A4-Stainless-Steel", {
+      templateUrl: "partials/metricfasteners/nuts/locking-nuts/DIN-980-All-Metal-A2-A4-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-982-Tall-Nylon-Insert", {
+      templateUrl: "partials/metricfasteners/nuts/locking-nuts/DIN-982-Tall-Nylon-Insert.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-985-Nylon-Insert-Zinc-Plated-Hot-Dipped-Galvanized-ISO-FIT", {
+      templateUrl: "partials/metricfasteners/nuts/locking-nuts/DIN-985-Nylon-Insert-Zinc-Plated-Hot-Dipped-Galvanized-ISO-FIT.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-985-Nylon-Insert-A2-A4-Stainless", {
+      templateUrl: "partials/metricfasteners/nuts/locking-nuts/DIN-985-Nylon-Insert-A2-A4-Stainless.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-985-Nylon-Insert-A2-A4-Stainless", {
+      templateUrl: "partials/metricfasteners/nuts/locking-nuts/DIN-985-Nylon-Insert-A2-A4-Stainless.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/K-Lock", {
+      templateUrl: "partials/metricfasteners/nuts/locking-nuts/K-Lock.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
 
 
     .otherwise({
