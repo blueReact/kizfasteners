@@ -736,6 +736,64 @@ function config($routeProvider, $locationProvider) {
       controllerAs: 'vm'
     })
 
+    // Flange-Nuts
+    .when("/DIN-6923-Flange-Nut", {
+      templateUrl: "partials/metricfasteners/nuts/Flange-Nuts/DIN-6923-Flange-Nut.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/DIN-6923-Flange-Nut-A2-Stainless-Steel", {
+      templateUrl: "partials/metricfasteners/nuts/Flange-Nuts/DIN-6923-Flange-Nut-A2-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/DIN-6926-Hex-Flange-with-Nylon-Insert", {
+      templateUrl: "partials/metricfasteners/nuts/Flange-Nuts/DIN-6926-Hex-Flange-with-Nylon-Insert.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/DIN-6927-All-Metal-Hex-Flange-Nut", {
+      templateUrl: "partials/metricfasteners/nuts/Flange-Nuts/DIN-6927-All-Metal-Hex-Flange-Nut.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/Hex-Flange-Nut-JIS", {
+      templateUrl: "partials/metricfasteners/nuts/Flange-Nuts/Hex-Flange-Nut-JIS.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    // Slotted Nuts
+    .when("/DIN-935-Hex-Castle-Nut", {
+      templateUrl: "partials/metricfasteners/nuts/Slotted-Nuts/DIN-935-Hex-Castle-Nut.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    // Miscellaneous
+    .when("/DIN-1587-Acorn-Nut", {
+      templateUrl: "partials/metricfasteners/nuts/Miscellaneous/DIN-1587-Acorn-Nut.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-1587-Acorn-Nut-A2-Stainless", {
+      templateUrl: "partials/metricfasteners/nuts/Miscellaneous/DIN-1587-Acorn-Nut-A2-Stainless.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-6334-Coupling-Nut", {
+      templateUrl: "partials/metricfasteners/nuts/Miscellaneous/DIN-6334-Coupling-Nut.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/American-Form-Wing-Nut", {
+      templateUrl: "partials/metricfasteners/nuts/Miscellaneous/American-Form-Wing-Nut.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
 
     .otherwise({
       templateUrl: 'partials/error/404.partial.html',
