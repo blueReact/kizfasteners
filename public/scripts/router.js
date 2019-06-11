@@ -795,6 +795,77 @@ function config($routeProvider, $locationProvider) {
       controllerAs: 'vm'
     })
 
+    // Machine Screws
+    // Zinc Plated
+    .when("/DIN-84-4-8-Slotted-Cheese-Head", {
+      templateUrl: "partials/metricfasteners/machineScrews/zinc-plated/DIN-84-4-8-Slotted-Cheese-Head.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-963-4-8-Slotted-Flat-Countersunk", {
+      templateUrl: "partials/metricfasteners/machineScrews/zinc-plated/DIN-963-4-8-Slotted-Flat-Countersunk.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-965-4-8-Phillips-Flat-Countersunk", {
+      templateUrl: "partials/metricfasteners/machineScrews/zinc-plated/DIN-965-4-8-Phillips-Flat-Countersunk.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-966-4-8-Phillips-Oval-Countersunk", {
+      templateUrl: "partials/metricfasteners/machineScrews/zinc-plated/DIN-966-4-8-Phillips-Oval-Countersunk.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-7985-4-8-Phillips-Pan-Head", {
+      templateUrl: "partials/metricfasteners/machineScrews/zinc-plated/DIN-7985-4-8-Phillips-Pan-Head.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-84-Slotted-Cheese-Head-A2-Stainless", {
+      templateUrl: "partials/metricfasteners/machineScrews/Stainless-Steel/DIN-84-Slotted-Cheese-Head-A2-Stainless.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-963-Slotted-Flat-Countersunk-A2-Stainless", {
+      templateUrl: "partials/metricfasteners/machineScrews/Stainless-Steel/DIN-963-Slotted-Flat-Countersunk-A2-Stainless.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-965-Phillips-Flat-Countersunk-A2-Stainless-Steel", {
+      templateUrl: "partials/metricfasteners/machineScrews/Stainless-Steel/DIN-965-Phillips-Flat-Countersunk-A2-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-7985-Phillips-Pan-Head-A2-Stainless-Steel", {
+      templateUrl: "partials/metricfasteners/machineScrews/Stainless-Steel/DIN-7985-Phillips-Pan-Head-A2-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+
+    // Brass
+    .when("/DIN-84-Slotted-Cheese-Head-Brass", {
+      templateUrl: "partials/metricfasteners/machineScrews/Brass/DIN-84-Slotted-Cheese-Head-Brass.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-963-Slotted-Flat-Countersunk-Brass", {
+      templateUrl: "partials/metricfasteners/machineScrews/Brass/DIN-963-Slotted-Flat-Countersunk-Brass.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+
     .otherwise({
       templateUrl: 'partials/error/404.partial.html',
       controller: 'mainController',
