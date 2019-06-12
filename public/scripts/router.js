@@ -865,6 +865,72 @@ function config($routeProvider, $locationProvider) {
       controllerAs: 'vm'
     })
 
+    // Rods / Bars
+    .when("/DIN-975-4-6-Bare-Steel-Zinc-Plated", {
+      templateUrl: "partials/metricfasteners/rodsBars/threaded-rods/DIN-975-4-6-Bare-Steel-Zinc-Plated.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-975-8-8-Bare-Steel", {
+      templateUrl: "partials/metricfasteners/rodsBars/threaded-rods/DIN-975-8-8-Bare-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-975-8-8-Hot-Dipped-Galvanized-ISO-FIT", {
+      templateUrl: "partials/metricfasteners/rodsBars/threaded-rods/DIN-975-8-8-Hot-Dipped-Galvanized-ISO-FIT.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-975-10-9-Bare-Steel", {
+      templateUrl: "partials/metricfasteners/rodsBars/threaded-rods/DIN-975-10-9-Bare-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-975-B7-Bare-Steel", {
+      templateUrl: "partials/metricfasteners/rodsBars/threaded-rods/DIN-975-B7-Bare-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-975-4-6-Bare-Steel-Left-Hand-Thread", {
+      templateUrl: "partials/metricfasteners/rodsBars/threaded-rods/DIN-975-4-6-Bare-Steel-Left-Hand-Thread.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-975-A2-A4-Stainless-Steel", {
+      templateUrl: "partials/metricfasteners/rodsBars/threaded-rods/DIN-975-A2-A4-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+    .when("/DIN-975-Brass", {
+      templateUrl: "partials/metricfasteners/rodsBars/threaded-rods/DIN-975-Brass.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
+
+    .when("/DIN-1652-K-h9-Cold-Rolled-Bar", {
+      templateUrl: "partials/metricfasteners/rodsBars/Bars/DIN-1652-K-h9-Cold-Rolled-Bar.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/DIN-175-h8-Steel-Drill-Rod", {
+      templateUrl: "partials/metricfasteners/rodsBars/Bars/DIN-175-h8-Steel-Drill-Rod.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+    .when("/DIN-671-Drill-Rod-A4-Stainless-Steel", {
+      templateUrl: "partials/metricfasteners/rodsBars/Bars/DIN-671-Drill-Rod-A4-Stainless-Steel.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
+
 
     .otherwise({
       templateUrl: 'partials/error/404.partial.html',
