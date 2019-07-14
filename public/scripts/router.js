@@ -375,6 +375,8 @@ function config($routeProvider, $locationProvider) {
       controller: 'mainController',
       controllerAs: 'vm'
     })
+
+    // Washers
     .when("/high-collar-lock-washers-bare-steel", {
       templateUrl: "partials/imperialfasteners/Washers/high-collar-lock-washers-bare-steel.partial.html",
       controller: 'mainController',
@@ -931,6 +933,12 @@ function config($routeProvider, $locationProvider) {
       controllerAs: 'vm'
     })
 
+    // faq
+    .when("/faq", {
+      templateUrl: "partials/faq/faq.partial.html",
+      controller: 'mainController',
+      controllerAs: 'vm'
+    })
 
     .otherwise({
       templateUrl: 'partials/error/404.partial.html',
