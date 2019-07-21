@@ -66,6 +66,7 @@ h2,
 h3 {
     margin-top: 0;
     font-weight: 400;
+    margin-bottom: 25px;
 }
 
 .form-group em {
@@ -110,6 +111,18 @@ table thead tr th {
     box-shadow: 0 0 0 0.2rem #FFB800;
 }
 
+
+ul.list>li:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    content: "\f105";
+    padding-right: 10px;
+}
+
+
 /* 
  * Navigation Bar
  */
@@ -120,7 +133,7 @@ table thead tr th {
     border-bottom: 10px solid #FFB800;
 }
 
-.navbar-light .navbar-nav .nav-link {   
+.navbar-light .navbar-nav .nav-link {
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -158,7 +171,7 @@ table thead tr th {
 /*
 * home
 */
-.block {
+.container-main {
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -177,6 +190,14 @@ table thead tr th {
     background-color: #FFB800;
     color: #000000;
     padding: 5px 10px;
+}
+
+.orange-bg h1 {
+    margin: 0;
+}
+
+.orange-bg h1 + p {
+    margin-top: 20px;
 }
 
 .dark-grey-bg {
@@ -237,12 +258,13 @@ table thead tr th {
 .carousel-content {
     position: absolute;
     bottom: 30px;
-    left: 30px;
+    left: 100px;
 }
 
 .carousel-content h1 {
     font-weight: 500;
     display: inline-block;
+    margin-bottom: 10px;
 }
 
 
@@ -267,7 +289,11 @@ table thead tr th {
 */
 .tiles {
     padding: 20px;
-    min-height: 150px;
+
+}
+
+.tiles-container .tiles {
+    min-height: 170px;
 }
 
 .tiles h1 {
@@ -326,12 +352,10 @@ table thead tr {
     color: #ffffff;
 }
 
-table thead tr:nth-child(1) th {
-    background-color: dodgerblue;
-}
+.inner-container h1,
+.inner-container h2 {
+    margin-bottom: 10px;
 
-table thead tr:nth-child(n+2) th {
-    background-color: cornflowerblue;
 }
 
 /*
@@ -343,7 +367,33 @@ table thead tr:nth-child(n+2) th {
 }
 
 .contact-us form {
-    width: 50%;    
+    width: 60%;
+}
+
+/*
+*   faq
+*/
+
+.card {
+    border-color: #FFB800;
+    margin-bottom: 15px;
+    border-radius: 0;
+}
+
+.card:last {
+    margin-bottom: 0;
+}
+
+.card-header {
+    border-bottom: none;
+}
+
+.card-header .btn-link {
+    color: #000000
+}
+
+.card-body h2 {
+    margin-bottom: 6px;
 }
 
 /*
@@ -357,12 +407,16 @@ footer {
     color: #fff;
 }
 
-
 /*
 * Media queries && Portable devices 
 */
 
 @media only screen and (max-width: 768px) {
+    .carousel-content {
+        left: 0;
+        width: 100%;
+    }
+
     .tiles+.bg {
         margin-bottom: 3rem;
     }

@@ -15,7 +15,7 @@
     vm.username = '';
     vm.hideError = true;
     vm.success = false;
-
+    
     vm.contactUs = function () {
 
       vm.hideError = false;
