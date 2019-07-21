@@ -50,11 +50,12 @@ module.exports.post = function (req, res, next) {
       const mailOptions = {
         from: email, // sender address
         to: 'kizfastenersbiz@gmail.com', // reciever address
-        subject: 'Sending Email using Node.js',
-        html: `<p style="font-size:16px;color:#555">Username ${result.username}</p>  
-        <p style="font-size:16px;color:#555">email</p> ${result.email}
-        <p style="font-size:16px;color:#555">message</p> ${result.message}.
-        <p style="font-size:16px;color:#555">phone</p> ${result.phone}`
+        subject: 'kizfasteners | ',
+        html: `<p style="font-size:16px;color:#555">Customer Name: ${result.username}</p> 
+        <p style="font-size:16px;color:#555">Companyname: ${result.companyname}</p>  
+        <p style="font-size:16px;color:#555">e-Mail: ${result.email}</p>
+        <p style="font-size:16px;color:#555">Customer message: ${result.message}</p>
+        <p style="font-size:16px;color:#555">Phone: ${result.phone}</p>`
       };
 
       // success
