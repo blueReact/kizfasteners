@@ -15,6 +15,7 @@
     vm.username = '';
     vm.hideError = true;
     vm.success = false;
+    var token = "Bearer" + " " + localStorage.getItem("JWT");
 
     vm.contactUs = function () {
 
@@ -100,8 +101,7 @@
             'password': vm.password
           },
           headers: {
-            'Content-Type': 'application/json' //,
-            //Authorization: token
+            'Content-Type': 'application/json'
           }
         })
         .then(function (response) {
@@ -113,8 +113,9 @@
           console.log(vm.response);
 
 
-          localStorage.setItem("admin", vm.response.admin)
-          localStorage.setItem("isLoggedIn", vm.response.isLoggedIn)
+          localStorage.setItem("admin", vm.response.admin);
+          localStorage.setItem("isLoggedIn", vm.response.isLoggedIn);
+          localStorage.setItem("JWT", vm.response.token);
 
           $location.path("/admindashboard")
 
@@ -125,6 +126,11 @@
     }
 
     vm.adminLogout = function () {
+
+      // remove all
+      localStorage.removeItem("admin");
+      localStorage.removeItem("isLoggedIn");
+      localStorage.removeItem("JWT");
 
       $http({
           method: 'post',
@@ -138,16 +144,18 @@
 
           // resetting the fields
           // vm.email = vm.password = '';
-          console.log(response);
-
-          localStorage.removeItem("admin");
-          localStorage.removeItem("isLoggedIn");
-
-          $location.path("/");
+          console.log('response', response);
 
         })
         .catch(function (err) {
-          console.log(err);
+
+          console.log('err', err);
+
+          // plan this
+          localStorage.setItem("logout", err.data.message);
+          vm.logOutMessage = localStorage.getItem("logout");
+          $location.path("/");
+
         });
 
     }
@@ -159,7 +167,7 @@
           url: '/api/admin',
           headers: {
             'Content-Type': 'application/json',
-            //Authorization: token
+            Authorization: token
           }
         })
         .then(function (response) {
@@ -180,23 +188,7 @@
 
     refresh();
 
-    // if($( window ).width()>1024) {
-    //   $('.dropdown-menu').css('width', $( window ).width() + 'px');
-    //   $('.dropdown-menu').css('height', ($( window ).height() - 40) + 'px');
-    // }
-    // $('.sub-dropdown-heading').hover(function(){
-    //   // var myEl = angular.element( document.querySelector( '.sub-dropdown' ) );
-    //   // myEl.toggleClass('active');
-    //   $(this).find('.sub-dropdown', this).toggleClass('active');
-    // });      
-
-    // $('.dropdown-menu').removeClass('active');
-    // $('.dropdown-toggle-j').click(function () {
-    //   // $('.dropdown-menu').removeClass('active');
-    //   $(this).next().toggleClass('active');
-    // });
-
-
+    // dropdown menu
     $('.dropdown-submenu > a').on("click", function (e) {
       var submenu = $(this);
       $('.dropdown-submenu .dropdown-menu').removeClass('show');

@@ -8,9 +8,10 @@ const {
 const admincontroller = require('../controllers/admin');
 const isLoggedIn = require('../middleware/is-logged-in');
 const isAdmin = require('../middleware/is-admin');
+const jwtAuth = require('../middleware/jwt-auth');
 
 // GET /api/admin
-router.get('/admin', isLoggedIn, isAdmin, admincontroller.adminCustomerGet);
+router.get('/admin', isLoggedIn, isAdmin, jwtAuth, admincontroller.adminCustomerGet);
 
 // POST /api/adminRegister
 router.post('/adminRegister',[

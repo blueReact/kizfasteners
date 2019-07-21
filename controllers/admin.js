@@ -1,6 +1,8 @@
 const bcrypt = require('bcryptjs');
 const moment = require('moment');
+const jwt = require('jsonwebtoken');
 const _ = require('lodash');
+const config = require('config');
 const admin = require('../models/admin');
 const contactUs = require('../models/contactus');
 
@@ -87,17 +89,26 @@ module.exports.adminLogin = function (req, res, next) {
           req.session.isLoggedIn = true;
           req.session.admin = user.admin;
 
+          // generating a jwt token
+          var token = jwt.sign({
+            email: user.email,
+            userId: user._id
+          }, config.get('services.JWT_KEY'), {
+            expiresIn: '1h'
+          });
+
           // logged in successfully
           return res.status(200).json({
             message: "Login successfullly",
+            token: token,
             admin: user.admin,
             isLoggedIn: true
           });
 
         } else {
 
-          // logged in successfully
-          return res.status(401).json("Login Failed");
+          // Login failed
+          return res.status(401).send("Login Failed");
 
         }
 
@@ -118,6 +129,8 @@ module.exports.adminCustomerGet = function (req, res, next) {
   // console.log('login', req.body);
   // res.send('POST');
 
+  console.log('req', req.token);
+
   // validationResult
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
@@ -126,45 +139,54 @@ module.exports.adminCustomerGet = function (req, res, next) {
     });
   };
 
-  contactUs
-    .find({})
-    .then(function (user) {
+  jwt.verify(req.token, config.get('services.JWT_KEY'), function (err, authData) {
+    
+    // console.log(authData);
 
-      const newUser = [];
+    contactUs
+      .find({})
+      .then(function (user) {
 
-      _.forEach(user, function (value) {
-        var current_time = new moment(value.createdAt).format("LLLL");
-        newUser.push({
-          current_time: current_time,         
-          username: value.username,
-          companyname: value.companyname,
-          email: value.email,
-          message: value.message,
-          phone: value.phone
+        const newUser = [];
+
+        _.forEach(user, function (value) {
+          var current_time = new moment(value.createdAt).format("LLLL");
+          newUser.push({
+            current_time: current_time,
+            username: value.username,
+            companyname: value.companyname,
+            email: value.email,
+            message: value.message,
+            phone: value.phone
+          });
+
         });
 
+        // console.log('newArr', newArr);
+
+        // logged in successfully
+        return res.status(200).json({
+          user: newUser
+        });
+
+      })
+      .catch(function (err) {
+
+        res.send(err);
+
       });
 
-      // console.log('newArr', newArr);
-      
-      // logged in successfully
-      return res.status(200).json({
-        user: newUser
-      });
-
-    })
-    .catch(function (err) {
-
-      res.send(err);
-
-    });
+  });
 
 }
 
 
-module.exports.destroySession = function (req, res, next){
-  req.session.destroy();
-  return res.status(204).json({
-    message: "logout"
+module.exports.destroySession = function (req, res, next) {
+
+  req.session.destroy(function () {
+    return res.status(422).json({
+      message: "logout"
+    });
   });
+
 }
