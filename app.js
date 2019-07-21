@@ -3,6 +3,7 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
 const config = require('config');
 const helmet = require('helmet');
@@ -40,9 +41,10 @@ app.use(bodyParser.urlencoded({
 
 // parse application/json
 app.use(bodyParser.json());
+app.use(cookieParser());
 
 app.use(session({
-  secret: 'my session secret',
+  secret: config.get('services.kizSessionSecret'),
   resave: false,
   saveUninitialized: false
 }));

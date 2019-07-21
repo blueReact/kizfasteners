@@ -62,4 +62,6 @@ router.post('/adminLogin', [
   
   ], admincontroller.adminLogin);
 
+router.post('/destroySession', admincontroller.destroySession)
+
 module.exports = router;

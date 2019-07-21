@@ -15,7 +15,7 @@
     vm.username = '';
     vm.hideError = true;
     vm.success = false;
-    
+
     vm.contactUs = function () {
 
       vm.hideError = false;
@@ -124,6 +124,34 @@
         });
     }
 
+    vm.adminLogout = function () {
+
+      $http({
+          method: 'post',
+          url: '/api/destroySession',
+          headers: {
+            'Content-Type': 'application/json' //,
+            //Authorization: token
+          }
+        })
+        .then(function (response) {
+
+          // resetting the fields
+          // vm.email = vm.password = '';
+          console.log(response);
+
+          localStorage.removeItem("admin");
+          localStorage.removeItem("isLoggedIn");
+
+          $location.path("/");
+
+        })
+        .catch(function (err) {
+          console.log(err);
+        });
+
+    }
+
     var refresh = function () {
 
       $http({
@@ -180,9 +208,6 @@
       // hide any open menus when parent closes
       $('.dropdown-menu.show').removeClass('show');
     });
-
-
-
 
   };
 

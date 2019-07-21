@@ -160,3 +160,11 @@ module.exports.adminCustomerGet = function (req, res, next) {
     });
 
 }
+
+
+module.exports.destroySession = function (req, res, next){
+  req.session.destroy();
+  return res.status(204).json({
+    message: "logout"
+  });
+}

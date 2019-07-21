@@ -2,6 +2,7 @@
   "name": "Express running on Dev",
   "services": {
     "dbName": "mongodb+srv://kizfasteners:Kiz2019@cluster0-s8btw.mongodb.net/test",
-    "sendGridApiKey":"sendGridApiKey"
+    "sendGridApiKey": "sendGridApiKey",
+    "kizSessionSecret": "kizSessionSecret"
   }
 }
