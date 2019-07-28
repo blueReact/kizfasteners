@@ -159,11 +159,24 @@ ul.list>li:before {
     /* left: 250px;
     top: 0; */
     position: static;
+    padding: 0;
 }
 
 .navbar-expand-sm .navbar-nav .nav-item>.dropdown-menu .dropdown-menu h2 {
-    padding: 0 20px 10px 20px;
+    padding: 10px 20px;
     border-bottom: 1px solid #e6e0e0;
+    background-color: #FFB800;
+}
+
+
+.dropdown-menu ul {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.dropdown-menu ul:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
 }
 
 
