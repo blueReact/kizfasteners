@@ -455,6 +455,9 @@ footer {
 */
 
 @media only screen and (max-width: 768px) {
+    .dropdown-item {
+        white-space: normal;
+    }
     .carousel-content {
         left: 0;
         width: 100%;
