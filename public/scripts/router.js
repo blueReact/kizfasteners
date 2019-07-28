@@ -74,7 +74,7 @@ function config($routeProvider, $locationProvider) {
       controller: 'mainController',
       controllerAs: 'vm'
     })
-    .when("/A2-A4-Stainless-Steel", {
+    .when("/Hex-Head-A2-A4-Stainless-Steel", {
       templateUrl: "partials/metricfasteners/hexHeadFasteners/DIN-931-ISO-4014-Partially-Threaded-Hex-Cap-Screw/A2-A4-Stainless-Steel.partial.html",
       controller: 'mainController',
       controllerAs: 'vm'
