@@ -59,11 +59,11 @@
       </div>
 
       <div class="form-group">
-        <label for="Message">Message <em>* Required</em></label>
+        <label for="Message">Message <em>* Required</em>  <label class="pull-right">Remaining characters - {{1000 - vm.message.length}} </label></label>
 
         <textarea type="text" class="form-control" placeholder="Message" name="message" ng-model="vm.message" rows="6"
           ng-minlength="5" ng-maxlength="1000" required></textarea>
-        <span class="pull-right"> {{1000 - vm.message.length}} characters remaining</span>
+       
 
         <!-- error -->
         <span class="position-absolute contact-us-error" ng-show="myForm.message.$dirty && myForm.message.$invalid"

@@ -392,6 +392,15 @@ table thead tr {
     font-style: italic;
 }
 
+.contact-us label {
+    display: block;
+}
+
+.contact-us label label {
+    font-size: 13px;
+    line-height: 23px;
+}
+
 /*invalid form*/
 .form-control.ng-invalid-required.ng-dirty {
     border-color: #ff0000;
