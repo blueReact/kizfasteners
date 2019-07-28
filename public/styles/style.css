@@ -74,12 +74,6 @@ h3 {
     color: #ff0000;
 }
 
-.fixed {
-    position: fixed;
-    background: #fff;
-    z-index: 999;
-}
-
 .bottom-right {
     right: 30px;
     bottom: 30px
@@ -129,8 +123,10 @@ ul.list>li:before {
 
 .navbar {
     margin-bottom: 0;
-    padding: 1.5rem 1rem;
+    z-index: 999;
     border-bottom: 10px solid #FFB800;
+    width: 100%;
+    background-color: #fff;
 }
 
 .navbar-light .navbar-nav .nav-link {
