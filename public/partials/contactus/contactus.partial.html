@@ -18,10 +18,10 @@
           <input type="text" class="form-control" placeholder="Name" name="username" ng-model="vm.username" required>
 
           <!-- error -->
-          <span>
-            <span style="color:red" ng-show="myForm.username.$dirty && myForm.username.$invalid" ng-hide="vm.hideError">
-              <span ng-show="myForm.username.$error.required">Username is required.</span>
-            </span></span>
+          <span class="position-absolute contact-us-error" ng-show="myForm.username.$dirty && myForm.username.$invalid"
+            ng-hide="vm.hideError">
+            <span ng-show="myForm.username.$error.required">Username is required.</span>
+          </span>
           <!--/.error-->
 
         </div>
@@ -38,10 +38,10 @@
         <input type="text" class="form-control" placeholder="Email" name="email" ng-model="vm.email" required>
 
         <!-- error -->
-        <span>
-          <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid" ng-hide="vm.hideError">
-            <span ng-show="myForm.email.$error.required">e-Mail is required.</span>
-          </span></span>
+        <span class="position-absolute contact-us-error" ng-show="myForm.email.$dirty && myForm.email.$invalid"
+          ng-hide="vm.hideError">
+          <span ng-show="myForm.email.$error.required">e-Mail is required.</span>
+        </span>
         <!--/.error-->
 
       </div>
@@ -51,10 +51,10 @@
         <input type="text" class="form-control" placeholder="Phone" name="phone" ng-model="vm.phone" required>
 
         <!-- error -->
-        <span>
-          <span style="color:red" ng-show="myForm.phone.$dirty && myForm.phone.$invalid" ng-hide="vm.hideError">
-            <span ng-show="myForm.phone.$error.required">Phone is required.</span>
-          </span></span>
+        <span class="position-absolute contact-us-error" ng-show="myForm.phone.$dirty && myForm.phone.$invalid"
+          ng-hide="vm.hideError">
+          <span ng-show="myForm.phone.$error.required">Phone is required.</span>
+        </span>
         <!--/.error-->
       </div>
 
@@ -66,13 +66,12 @@
         <span class="pull-right"> {{1000 - vm.message.length}} characters remaining</span>
 
         <!-- error -->
-        <span>
-          <span style="color:red" ng-show="myForm.message.$dirty && myForm.message.$invalid" ng-hide="vm.hideError">
-            <span ng-show="myForm.message.$error.required">Message is required.</span>
-          </span>
-          <span style="color:red" ng-show="myForm.message.$error.minlength">
-            <span>Message must be minimum 5 characters long.</span>
-          </span>
+        <span class="position-absolute contact-us-error" ng-show="myForm.message.$dirty && myForm.message.$invalid"
+          ng-hide="vm.hideError">
+          <span ng-show="myForm.message.$error.required">Message is required.</span>
+        </span>
+        <span class="position-absolute contact-us-error" ng-show="myForm.message.$error.minlength">
+          <span>Message must be minimum 5 characters long.</span>
         </span>
         <!--/.error-->
       </div>
