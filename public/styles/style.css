@@ -196,7 +196,7 @@ ul.list>li:before {
     margin: 0;
 }
 
-.orange-bg h1 + p {
+.orange-bg h1+p {
     margin-top: 20px;
 }
 
@@ -370,6 +370,12 @@ table thead tr {
     width: 60%;
 }
 
+/*invalid form*/
+.form-control.ng-invalid-required.ng-dirty {
+    border-color: #ff0000;
+    box-shadow: 0 0 0 0.2rem #f99090;
+}
+
 /*
 *   faq
 */
@@ -408,9 +414,19 @@ footer {
 }
 
 
-.error-template {padding: 40px 15px;text-align: center;}
-.error-actions {margin-top:15px;margin-bottom:15px;}
-.error-actions .btn { margin-right:10px; }
+.error-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.error-actions {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.error-actions .btn {
+    margin-right: 10px;
+}
 
 /*
 * Media queries && Portable devices 
