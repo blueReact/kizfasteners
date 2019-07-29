@@ -46,6 +46,11 @@
           vm.hideError = true;
           vm.success = true;
 
+          // Set back to pristine.
+          vm.myForm.$setPristine();
+          // Since Angular 1.3, set back to untouched state.
+          vm.myForm.$setUntouched();
+
           console.log(vm.response);
 
           refresh();

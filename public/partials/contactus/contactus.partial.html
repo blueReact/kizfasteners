@@ -44,7 +44,7 @@
     </div>
     <div class="d-flex justify-content-center">
       <!-- form -->
-      <form name="myForm" novalidate>
+      <form name="vm.myForm" novalidate>
 
         <div class="row">
           <div class="form-group col-md-6 col-sm-12">
@@ -54,8 +54,8 @@
 
             <!-- error -->
             <span class="position-absolute contact-us-error"
-              ng-show="myForm.username.$dirty && myForm.username.$invalid" ng-hide="vm.hideError">
-              <span ng-show="myForm.username.$error.required">Username is required.</span>
+              ng-show="vm.myForm.username.$dirty && vm.myForm.username.$invalid" ng-hide="vm.hideError">
+              <span ng-show="vm.myForm.username.$error.required">Username is required.</span>
             </span>
             <!--/.error-->
 
@@ -73,9 +73,9 @@
           <input type="text" class="form-control" placeholder="Email" name="email" ng-model="vm.email" required>
 
           <!-- error -->
-          <span class="position-absolute contact-us-error" ng-show="myForm.email.$dirty && myForm.email.$invalid"
+          <span class="position-absolute contact-us-error" ng-show="vm.myForm.email.$dirty && vm.myForm.email.$invalid"
             ng-hide="vm.hideError">
-            <span ng-show="myForm.email.$error.required">e-Mail is required.</span>
+            <span ng-show="vm.myForm.email.$error.required">e-Mail is required.</span>
           </span>
           <!--/.error-->
 
@@ -86,9 +86,9 @@
           <input type="text" class="form-control" placeholder="Phone" name="phone" ng-model="vm.phone" required>
 
           <!-- error -->
-          <span class="position-absolute contact-us-error" ng-show="myForm.phone.$dirty && myForm.phone.$invalid"
+          <span class="position-absolute contact-us-error" ng-show="vm.myForm.phone.$dirty && vm.myForm.phone.$invalid"
             ng-hide="vm.hideError">
-            <span ng-show="myForm.phone.$error.required">Phone is required.</span>
+            <span ng-show="vm.myForm.phone.$error.required">Phone is required.</span>
           </span>
           <!--/.error-->
         </div>
@@ -102,25 +102,25 @@
 
 
           <!-- error -->
-          <span class="position-absolute contact-us-error" ng-show="myForm.message.$dirty && myForm.message.$invalid"
+          <span class="position-absolute contact-us-error" ng-show="vm.myForm.message.$dirty && vm.myForm.message.$invalid"
             ng-hide="vm.hideError">
-            <span ng-show="myForm.message.$error.required">Message is required.</span>
+            <span ng-show="vm.myForm.message.$error.required">Message is required.</span>
           </span>
-          <span class="position-absolute contact-us-error" ng-show="myForm.message.$error.minlength">
+          <span class="position-absolute contact-us-error" ng-show="vm.myForm.message.$error.minlength">
             <span>Message must be minimum 5 characters long.</span>
           </span>
           <!--/.error-->
         </div>
 
-        <button type="submit" class="btn orange-bg" ng-click="vm.contactUs()" ng-disabled="(myForm.username.$dirty && myForm.username.$invalid || myForm.username.$pristine) 
+        <button type="submit" class="btn orange-bg" ng-click="vm.contactUs()" ng-disabled="(vm.myForm.username.$dirty && vm.myForm.username.$invalid || vm.myForm.username.$pristine) 
       
-      || (myForm.email.$dirty && myForm.email.$invalid || myForm.email.$pristine)
+      || (vm.myForm.email.$dirty && vm.myForm.email.$invalid || vm.myForm.email.$pristine)
 
-      || (myForm.phone.$dirty && myForm.phone.$invalid || myForm.phone.$pristine)
+      || (vm.myForm.phone.$dirty && vm.myForm.phone.$invalid || vm.myForm.phone.$pristine)
 
-      || (myForm.message.$dirty && myForm.message.$invalid || myForm.message.$pristine)
+      || (vm.myForm.message.$dirty && vm.myForm.message.$invalid || vm.myForm.message.$pristine)
 
-      || (myForm.message.$error.minlength && myForm.message.$error.maxlength)
+      || (vm.myForm.message.$error.minlength && vm.myForm.message.$error.maxlength)
       ">Submit</button>
 
       </form>
