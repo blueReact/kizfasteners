@@ -26,9 +26,16 @@ if (fs.existsSync(dirname)) {
 
         // reordering the array
         // module must be the file angualrjs file
-        var tmp = filenames[0];
-        filenames[0] = filenames[1];
-        filenames[1] = tmp;
+        
+        var tmpControllerFile = filenames[0];
+        var tmpDirectiveFile = filenames[1];
+        var tmpModuleFile = filenames[2];
+        var tmpRouterFile = filenames[3];
+
+        filenames[0] = tmpModuleFile;
+        filenames[1] = tmpControllerFile;
+        filenames[2] = tmpDirectiveFile;
+        filenames[3] = tmpRouterFile;        
 
         filenames.forEach(function (filename, index) {
 

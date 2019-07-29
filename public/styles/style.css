@@ -206,6 +206,7 @@ ul.list>li:before {
     background-color: #FFB800;
     color: #000000;
     padding: 5px 10px;
+    width: 100%;
 }
 
 .orange-bg h1 {
@@ -399,6 +400,15 @@ table thead tr {
 .contact-us label label {
     font-size: 13px;
     line-height: 23px;
+}
+
+.btn.orange-bg {
+    width: auto;
+}
+
+address p {
+    margin-bottom: 0;
+    font-style: italic;
 }
 
 /*invalid form*/
