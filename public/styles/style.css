@@ -412,7 +412,7 @@ address p {
 }
 
 /*invalid form*/
-.form-control.ng-invalid-required.ng-dirty {
+.form-control.ng-invalid-required.ng-touched {
     border-color: #ff0000;
     box-shadow: 0 0 0 0.2rem #f99090;
 }
