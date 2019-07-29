@@ -32,7 +32,14 @@ module.exports.post = function (req, res, next) {
   // console.log(req.body);
 
   const username = req.body.username;
-  const companyname = req.body.companyname;
+  var companyname = '';  
+
+  if(req.body.companyname === '' || req.body.companyname === undefined) {
+    companyname = 'Not filled by the user';
+  }
+  else {
+    companyname = req.body.companyname;
+  }
   const email = req.body.email;
   const phone = req.body.phone;
   const message = req.body.message;
