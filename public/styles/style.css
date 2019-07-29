@@ -78,9 +78,10 @@ h3 {
     color: #ff0000;
 }
 
-.bottom-right {
-    right: 30px;
-    bottom: 30px
+.top-right {
+    right: 20px;
+    top: 20px;
+    z-index: 9999;
 }
 
 .table>tbody>tr>td,
