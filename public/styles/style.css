@@ -125,6 +125,9 @@ ul.list>li:before {
     padding-right: 10px;
 }
 
+span.btn-danger {
+    cursor: pointer;
+}
 
 /* 
  * Navigation Bar
