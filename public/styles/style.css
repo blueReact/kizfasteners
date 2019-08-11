@@ -124,17 +124,6 @@ table thead tr th {
     box-shadow: 0 0 0 0.2rem #FFB800;
 }
 
-
-ul.list>li:before {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    content: "\f105";
-    padding-right: 10px;
-}
-
 span.btn-danger {
     cursor: pointer;
 }
