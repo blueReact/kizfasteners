@@ -37,10 +37,15 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!--font awesome -->
+  <link href="fonts/fontawesome-free-5.10.1-web/css/all.min.css" rel="stylesheet">
+  <!--load all styles -->
+  <script defer src="fonts/fontawesome-free-5.10.1-web/js/all.js"></script>
+  <!--load all styles -->
 
   <!-- custom -->
-  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="dist/style.css">
   <style>
     /* gives the class early */
     [ng\:cloak],
@@ -115,27 +120,51 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
+  <!--fallback-->
+  <script>window.jQuery || document.write('<script src="library/jquery-3.3.1.slim.min.js">\x3C/script>')</script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
   </script>
+  <!--fallback-->
+  <script>window.Popper || document.write('<script src="library/popper.min.js"><\/script>')</script>
 
   <!-- Latest compiled JavaScript -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+  <!--fallback-->
+  <script> $.fn.modal || document.write('<script src="library/bootstrap.min.js">\x3C/script>')</script>
 
   <!-- angularjs library -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.0/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.0/angular-cookies.min.js"></script>
-  <script src="https://code.angularjs.org/1.7.0/angular-route.min.js"></script>
+  <!--fallback-->
+  <script>
+    try {
+      angular.module('angular')
+    } catch (e) {
+      document.write('<script src="library/angular.min.js">\x3C/script>')
+    }
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.0/angular-route.min.js"></script>
+  <!--fallback-->
+  <script>
+    try {
+      angular.module('ngRoute')
+    } catch (e) {
+      document.write('<script src="library/angular-route.min.js">\x3C/script>')
+    }
+  </script>
 
   <!-- custom scripts -->
-  <!-- <script src="scripts/module.js"></script>
+  <script src="scripts/module.js"></script>
   <script src="scripts/controller.js"></script>
-  <script src="scripts/router.js"></script> -->
+  <script src="scripts/router.js"></script>
+  <script src="scripts/directive.js"></script>
 
   <!-- minified js -->
-  <script src="scripts/minified.js"></script>
+  <!--<script src="scripts/minified.js"></script>-->
 
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">

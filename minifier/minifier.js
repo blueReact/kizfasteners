@@ -35,7 +35,9 @@ if (fs.existsSync(dirname)) {
         filenames[0] = tmpModuleFile;
         filenames[1] = tmpControllerFile;
         filenames[2] = tmpDirectiveFile;
-        filenames[3] = tmpRouterFile;        
+        filenames[3] = tmpRouterFile;   
+        
+        console.log(filenames)
 
         filenames.forEach(function (filename, index) {
 
