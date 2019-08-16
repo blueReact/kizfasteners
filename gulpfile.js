@@ -97,7 +97,7 @@ gulp.task('inject', ['copy'], function () {
 gulp.task('serve', ['inject'], function () {
   gulp.src(paths.tmp)
     .pipe(webserver({
-      port: 4080,
+      port: 3000,
       livereload: true,
       directoryListing: false,
       open: true,
