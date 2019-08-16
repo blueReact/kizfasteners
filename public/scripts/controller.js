@@ -4,7 +4,7 @@
   // articles.controller.js
   angular
     .module('myApp')
-    .controller('mainController', mainController);    
+    .controller('mainController', mainController);  
 
   mainController.$inject = ['$rootScope', '$http', '$location', '$window'];
 

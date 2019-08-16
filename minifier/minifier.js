@@ -32,14 +32,16 @@ if (fs.existsSync(dirname)) {
         var tmpModuleFile = filenames[2];
         var tmpRouterFile = filenames[3];
 
-        filenames[0] = tmpModuleFile;
-        filenames[1] = tmpControllerFile;
-        filenames[2] = tmpDirectiveFile;
-        filenames[3] = tmpRouterFile;   
-        
-        console.log(filenames)
+        var filenamesNew = [];
 
-        filenames.forEach(function (filename, index) {
+        filenamesNew[0] = tmpModuleFile;
+        filenamesNew[1] = tmpControllerFile;
+        filenamesNew[2] = tmpDirectiveFile;
+        filenamesNew[3] = tmpRouterFile;   
+        
+        console.log(filenamesNew)
+
+        filenamesNew.forEach(function (filename, index) {
 
             var ext = path.extname(filename.toString());
 

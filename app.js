@@ -52,7 +52,7 @@ app.use(session({
 app.use(compression());
 
 // serving static files
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "tmp")));
 app.use(favicon(path.join(__dirname, "public", "images", "node.ico")));
 
 // var server = livereload.createServer({
