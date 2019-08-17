@@ -140,6 +140,10 @@ span.btn-danger {
     background-color: #fff;
 }
 
+.navbar-light .navbar-brand {
+    padding: 0;
+}
+
 .navbar-light .navbar-nav .nav-link {
     text-transform: uppercase;
     font-weight: 500;

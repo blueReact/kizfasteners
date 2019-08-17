@@ -1,5 +1,12 @@
-node_modules
-public
-minifier
-client-side-assets // client side assets
-controllers.zip
+# Node Modules
+node_modules        
+
+# public
+public              
+
+#deprecated
+minifier           
+
+#client side assets
+client-side-assets  
+
