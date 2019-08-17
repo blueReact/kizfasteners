@@ -52,7 +52,29 @@ gulp.task('html', function () {
   return gulp.src(paths.srcHTML)
     .pipe(changed(paths.dist))
     .pipe(htmlmin({
-      collapseWhitespace: true
+      collapseWhitespace: true, // Collapse white space that contributes to text nodes in a document tree
+      collapseInlineTagWhitespace: true, // Don't leave any spaces between display:inline; elements when collapsing. Must be used in conjunction with collapseWhitespace=true
+      conservativeCollapse: true, // Always collapse to 1 space (never remove it entirely). Must be used in conjunction with collapseWhitespace=true
+      ignoreCustomComments: [
+
+        // inject style.min.css
+        /^\s+inject:css/,
+        /^\s+endinject\s+$/,
+
+        // inject bundle.mins.css
+        /^\s+inject:js/,
+        /^\s+endinject\s+$/
+      ],
+      html5: true, // Minify CSS in style elements and style attributes (uses clean-css)
+      minifyCSS: true, // Minify CSS in style elements and style attributes (uses clean-css)
+      minifyJS: {
+        mangle: false
+      }, // Minify JavaScript in script elements and event attributes (uses UglifyJS)
+      minifyURLs: true, // Minify URLs in various attributes (uses relateurl)
+      removeComments: true, // Strip HTML comments
+      sortAttributes: true, // Sort attributes by frequency
+      sortClassName: true, // Sort style classes by frequency
+      useShortDoctype: true // Replaces the doctype with the short (HTML5) doctype
     }))
     .pipe(gulp.dest(paths.dist));
 });
