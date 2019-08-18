@@ -1,12 +1,12 @@
 # Node Modules
-node_modules        
+node_modules/        
 
 # public
-public              
+public/              
 
 #deprecated
-minifier           
+minifier/           
 
 #client side assets
-client-side-assets  
+client-side-assets/  
 
