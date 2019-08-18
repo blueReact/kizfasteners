@@ -44,6 +44,7 @@
   <!--load all styles -->
 
   <!-- custom -->
+  <link rel="stylesheet" href="styles/style.css">
   <!-- inject:css -->
   <!-- endinject -->
   <style>
@@ -104,11 +105,9 @@
 
   <div ng-cloak ng-controller="mainController as vm">
 
-    <div ng-include="'partials/header/navBar.partial.html'"></div>
+    <div ng-include="'partials/header/navBar.partial.html'"></div>    
 
-    <div ng-include="'partials/header/banner.partial.html'"></div>
-
-    <div ng-view class="container-fluid"></div>
+    <div ng-view></div>
 
     <div ng-include="'partials/footer/footer.partial.html'"></div>
 
