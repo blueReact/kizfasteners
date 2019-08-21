@@ -90,10 +90,10 @@ app.use(function (err, req, res, next) {
 
 
 // Create an HTTP service.
-// http.createServer(app).listen(port);
-// // Create an HTTPS service identical to the HTTP service.
-// https.createServer(app).listen(httpsPort);
+http.createServer(app).listen(port);
+// Create an HTTPS service identical to the HTTP service.
+https.createServer(app).listen(httpsPort);
 
-app.listen(port, function () {
-  console.log('Running on port', port);
-});
+// app.listen(port, function () {
+//   console.log('Running on port', port);
+// });
