@@ -15,6 +15,7 @@ const compression = require('compression');
 // const livereload = require('livereload');
 
 const port = process.env.PORT || 3000;
+const httpsPort = process.env.PORT || 443
 const app = express();
 
 // router
@@ -91,7 +92,7 @@ app.use(function (err, req, res, next) {
 // Create an HTTP service.
 http.createServer(app).listen(port);
 // Create an HTTPS service identical to the HTTP service.
-https.createServer(app).listen(443);
+https.createServer(app).listen(httpsPort);
 
 // app.listen(port, function () {
 //   console.log('Running on port', port);
