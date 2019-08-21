@@ -68,7 +68,14 @@ gulp.task('html', function () {
       html5: true, // Minify CSS in style elements and style attributes (uses clean-css)
       minifyCSS: true, // Minify CSS in style elements and style attributes (uses clean-css)
       minifyJS: {
-        mangle: false
+        mangle: false,        
+        ie8: true,
+        compress: {
+          drop_console: true
+        },
+        output: {
+          comments: false
+        }
       }, // Minify JavaScript in script elements and event attributes (uses UglifyJS)
       minifyURLs: true, // Minify URLs in various attributes (uses relateurl)
       removeComments: true, // Strip HTML comments

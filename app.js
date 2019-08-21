@@ -1,4 +1,6 @@
 const path = require('path');
+var http = require('http');
+var https = require('https');
 
 const express = require('express');
 const session = require('express-session');
@@ -52,7 +54,7 @@ app.use(session({
 app.use(compression());
 
 // serving static files
-app.use(express.static(path.join(__dirname, "dist")));
+app.use(express.static(path.join(__dirname, "public")));
 app.use(favicon(path.join(__dirname, "public", "images", "kizfasteners.ico")));
 
 // var server = livereload.createServer({
@@ -86,6 +88,11 @@ app.use(function (err, req, res, next) {
 });
 
 
-app.listen(port, function () {
-  console.log('Running on port', port);
-});
+// Create an HTTP service.
+http.createServer(app).listen(port);
+// Create an HTTPS service identical to the HTTP service.
+https.createServer(app).listen(443);
+
+// app.listen(port, function () {
+//   console.log('Running on port', port);
+// });

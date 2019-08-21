@@ -1,7 +1,6 @@
 # kizfasteners
 A fasteners website using MEAN stack and AWS
 
-Built a simple calculator using:
 * [ AWS ](https://aws.amazon.com/) - Amazon Web Services is a subsidiary of Amazon that provides on-demand cloud computing platforms to individuals, companies and governments, on a metered pay-as-you-go basis.
 * [ MongoDB ](https://www.mongodb.com/) - MongoDB is the leading NoSQL database, empowering businesses to be more agile and scalable
 * [ Express ](https://expressjs.com/) - Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
