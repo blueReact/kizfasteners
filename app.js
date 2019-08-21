@@ -1,6 +1,6 @@
 const path = require('path');
-var http = require('http');
-var https = require('https');
+// var http = require('http');
+// var https = require('https');
 
 const express = require('express');
 const session = require('express-session');
@@ -15,7 +15,6 @@ const compression = require('compression');
 // const livereload = require('livereload');
 
 const port = process.env.PORT || 3000;
-const httpsPort = process.env.PORT || 443
 const app = express();
 
 // router
