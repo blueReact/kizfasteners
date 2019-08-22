@@ -1,5 +1,9 @@
 const express = require('express');
 const router = express.Router();
+
+const rateLimit = require("express-rate-limit");
+const limiter = rateLimit(require('../misc/rateLimiter'));
+
 const {
   check
 } = require('express-validator/check');
@@ -60,6 +64,6 @@ router.post('/contactus', [
     .withMessage("Field should only contain alphabets and Numbers!")
     .trim()
 
-], contactusController.post);
+],limiter, contactusController.post);
 
 module.exports = router;

@@ -58,7 +58,7 @@
         })
         .catch(function (err) {
           console.log(err);
-          vm.error = err;
+          vm.ContactUsErr = err;
         });
 
 
@@ -91,6 +91,7 @@
         })
         .catch(function (err) {
           console.log(err);
+          vm.adminRegisterErr = err;
         });
     }
 
@@ -127,6 +128,7 @@
         })
         .catch(function (err) {
           console.log(err);
+          vm.adminLoginErr = err;
         });
     }
 

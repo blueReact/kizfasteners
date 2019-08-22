@@ -36,6 +36,7 @@ mongoose.connect(config.get('services.dbName'), {
  * middlewares 
  */
 app.use(helmet());
+app.set('trust proxy', 1);
 // parse epplication/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({
   extended: false

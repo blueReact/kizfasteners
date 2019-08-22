@@ -7,4 +7,4 @@
       || (vm.myForm.message.$dirty && vm.myForm.message.$invalid || vm.myForm.message.$pristine)
 
       || (vm.myForm.message.$error.minlength && vm.myForm.message.$error.maxlength)
-      " type="submit">Submit</button> </form> </div> </div> <div class="alert position-fixed top-right alert-danger" ng-if="vm.error" role="alert"> Error! </div> <div class="alert position-fixed top-right alert-success" ng-if="vm.success" role="alert"> Thank you for sending us your request! </div> </div>
+      " type="submit">Submit</button> </form> </div> </div> <div class="alert alert-danger position-fixed top-right" ng-if="vm.ContactUsErr" role="alert"> Error! </div> <div class="alert alert-danger" ng-if="vm.ContactUsErr.status === 429" role="alert"> {{vm.ContactUsErr.data}} </div> <div class="alert position-fixed top-right alert-success" ng-if="vm.success" role="alert"> Thank you for sending us your request! </div> </div>

@@ -130,8 +130,12 @@
   </div>
 
   <!-- error block -->
-  <div class="alert alert-danger position-fixed top-right" role="alert" ng-if="vm.error">
+  <div class="alert alert-danger position-fixed top-right" role="alert" ng-if="vm.ContactUsErr">
     Error!
+  </div>
+
+  <div class="alert alert-danger" role="alert" ng-if="vm.ContactUsErr.status === 429">
+    {{vm.ContactUsErr.data}}
   </div>
   <!-- ./error block -->
 
