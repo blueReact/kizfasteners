@@ -56,7 +56,7 @@ app.use(compression());
 
 // serving static files
 app.use(express.static(path.join(__dirname, "dist")));
-app.use(favicon(path.join(__dirname, "public", "images", "kizfasteners.ico")));
+app.use(favicon(path.join(__dirname, "dist", "images", "kizfasteners.ico")));
 
 // var server = livereload.createServer({
 //   exts: ['html', 'css', 'js', 'png', 'jpg']
