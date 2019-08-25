@@ -139,11 +139,11 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <div ng-cloak ng-controller="mainController as vm">
+  <div class="cloak-loader" ng-cloak ng-controller="mainController as vm">
 
     <div ng-include="'partials/header/navBar.partial.html'"></div>
 
-    <div ng-view class="mb-5"></div>
+    <div ng-view></div>
 
     <div ng-include="'partials/footer/footer.partial.html'"></div>
 
