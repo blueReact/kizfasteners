@@ -459,6 +459,11 @@ table thead tr {
     padding: 20px 0;
 }
 
+.contact-us .card {
+    min-height: 214px; 
+    margin-bottom: 0;
+}
+
 .contact-us form {
     width: 60%;
 }
@@ -500,9 +505,8 @@ address p {
 
 .card {
     border-color: #FFB800;
-    margin-bottom: 0;
+    margin-bottom: 15px;
     border-radius: 0;
-    min-height: 214px;
 }
 
 .card:last {
@@ -520,6 +524,7 @@ address p {
 .card-body h2 {
     margin-bottom: 6px;
 }
+
 
 /*
 * footer
