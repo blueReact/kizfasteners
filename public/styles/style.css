@@ -371,13 +371,6 @@ span.btn-danger {
 
 .application-areas-container ul li {
     background-color: #fff;
-}
-
-.application-areas-container ul li:nth-child(2n) {
-    background-color: #f0f0f0;
-}
-
-.application-areas-container ul li {
     overflow: hidden;
 }
 
@@ -406,6 +399,14 @@ span.btn-danger {
     opacity: 1;
     transition: all 0.8s;
     /*I've reduced this to a single line (prefixing isn't needed)!*/
+}
+
+.application-areas-container ul li:nth-child(2n) {
+    background-color: #f0f0f0;
+}
+
+.application-areas-container li:hover:nth-child(2n) {
+    background-color: #FFB800;
 }
 
 .application-areas-container li>h2 {
