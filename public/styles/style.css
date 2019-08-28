@@ -13,7 +13,8 @@ h2 {
     font-size: 20px;
 }
 
-h3 {
+h3,
+h4 {
     font-size: 16px;
 }
 
@@ -67,6 +68,7 @@ h3 {
     margin-top: 0;
     font-weight: 400;
     margin-bottom: 25px;
+    font-size: 24px;
 }
 
 .h4,
@@ -364,6 +366,112 @@ span.btn-danger {
 
 
 /*
+* application-areas-container
+*/
+
+.application-areas-container ul li {
+    background-color: #fff;
+}
+
+.application-areas-container ul li:nth-child(2n) {
+    background-color: #f0f0f0;
+}
+
+.application-areas-container ul li {
+    overflow: hidden;
+}
+
+.application-areas-container li:hover {
+    background-color: #FFB800;
+    color: #000000;
+}
+
+.application-areas-container li .bg {
+    min-height: 150px;
+    transition: 0.3s;
+}
+
+.application-areas-container li:hover .bg {
+    transform: scale(1.2);
+}
+
+.application-areas-container li:hover .bg:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 184, 0, 0.5);
+    opacity: 1;
+    transition: all 0.8s;
+    /*I've reduced this to a single line (prefixing isn't needed)!*/
+}
+
+.application-areas-container li>h2 {
+    padding: 35px 0 20px 0;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+
+.application-areas-container .bg-cover-1 {
+    background: url('../images/application-areas/1-Electrical-towers.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.application-areas-container .bg-cover-2 {
+    background: url('../images/application-areas/2-Electrical-equipment.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.application-areas-container .bg-cover-3 {
+    background: url('../images/application-areas/3-Structural-plants.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.application-areas-container .bg-cover-4 {
+    background: url('../images/application-areas/4-Swimming-pool.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.application-areas-container .bg-cover-5 {
+    background: url('../images/application-areas/5-Furnaces.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.application-areas-container .bg-cover-6 {
+    background: url('../images/application-areas/6-Pharmaceutical-industries.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.application-areas-container .bg-cover-7 {
+    background: url('../images/application-areas/7-Food-&-beverage-industry.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.application-areas-container .bg-cover-8 {
+    background: url('../images/application-areas/8-Chemical-machinery.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.application-areas-container .bg-cover-9 {
+    background: url('../images/application-areas/9-Building-interiors.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.application-areas-container .bg-cover-10 {
+    background: url('../images/application-areas/10-Roofing.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.application-areas-container .bg-cover-11 {
+    background: url('../images/application-areas/11-Installation-of-refineries.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+
+/*
 *   tiles
 */
 .tiles {
@@ -372,16 +480,16 @@ span.btn-danger {
 }
 
 .tiles-container .tiles {
-    min-height: 170px;
+    min-height: 185px;
 }
 
-.tiles h1,
+.tiles h2,
 h6 {
     position: relative;
     padding-bottom: 10px;
 }
 
-.tiles h1:after,
+.tiles h2:after,
 h6:after {
     content: '';
     position: absolute;
@@ -460,7 +568,7 @@ table thead tr {
 }
 
 .contact-us .card {
-    min-height: 214px; 
+    min-height: 214px;
     margin-bottom: 0;
 }
 
