@@ -76,6 +76,12 @@ app.use('/api', contactusRoutes);
 // admin
 app.use('/api', adminRoutes);
 
+
+// rewrite virtual urls to angular app to enable refreshing of internal pages
+app.use('*', function (req, res, next) {
+  res.redirect('/');
+});
+
 app.use(function (err, req, res, next) {
 
   console.log(err);
