@@ -6,6 +6,10 @@ angular
 config.$inject = ['$routeProvider', '$locationProvider'];
 
 function config($routeProvider, $locationProvider) {
+
+  // use the HTML5 History API
+  $locationProvider.html5Mode(true);
+
   $routeProvider
     .when("/", {
       templateUrl: "partials/home.partial.html",

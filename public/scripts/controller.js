@@ -66,7 +66,7 @@
 
     vm.adminRegister = function () {
 
-      console.log(vm.username);
+      // console.log(vm.username);
 
       $http({
           method: 'post',
@@ -86,18 +86,18 @@
 
           // resetting the fields
           vm.email = vm.password = '';
-          console.log(vm.response);
+          // console.log(vm.response);
 
         })
         .catch(function (err) {
-          console.log(err);
+          // console.log(err);
           vm.adminRegisterErr = err;
         });
     }
 
     vm.adminLogin = function () {
 
-      console.log(vm.username);
+      // console.log(vm.username);
 
       $http({
           method: 'post',
@@ -116,7 +116,7 @@
 
           // resetting the fields
           // vm.email = vm.password = '';
-          console.log(vm.response);
+          // console.log(vm.response);
 
 
           localStorage.setItem("admin", vm.response.admin);
@@ -127,7 +127,7 @@
 
         })
         .catch(function (err) {
-          console.log(err);
+          // console.log(err);
           vm.adminLoginErr = err;
         });
     }
@@ -151,12 +151,12 @@
 
           // resetting the fields
           // vm.email = vm.password = '';
-          console.log('response', response);
+          // console.log('response', response);
 
         })
         .catch(function (err) {
 
-          console.log('err', err);
+          // console.log('err', err);
 
           // plan this
           localStorage.setItem("logout", err.data.message);
@@ -188,12 +188,12 @@
 
         })
         .catch(function (err) {
-          console.log(err);
+          // console.log(err);
         });
 
     }
 
-    refresh();
+    // refresh(); // angular.js:12996 GET http://localhost:3000/api/admin 401 (Unauthorized)
 
     // dropdown menu
     $('.dropdown-submenu > a').on("click", function (e) {
