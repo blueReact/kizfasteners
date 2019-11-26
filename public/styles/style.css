@@ -2,7 +2,7 @@
 * global properties
 */
 body {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
 }
 
 h1 {
@@ -725,11 +725,3 @@ footer .footer-copyright {
     }
 }
 
-.lazyload { opacity: 0;opacity: 1; -webkit-transition: opacity 0.5s 0s ease, all 0.5s 0s ease;
-    -moz-transition: opacity 0.5s 0s ease, all 0.5s 0s ease;
-    -o-transition: opacity 0.5s 0s ease, all 0.5s 0s ease;
-    transition: opacity 0.5s 0s ease, all 0.5s 0s ease;}
-.lazyloaded { opacity: 1; -webkit-transition: opacity 0.5s 0s ease, all 0.5s 0s ease;
-    -moz-transition: opacity 0.5s 0s ease, all 0.5s 0s ease;
-    -o-transition: opacity 0.5s 0s ease, all 0.5s 0s ease;
-    transition: opacity 0.5s 0s ease, all 0.5s 0s ease;}
