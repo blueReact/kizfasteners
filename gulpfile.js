@@ -89,26 +89,26 @@ gulp.task('html', function () {
 gulp.task('css', function () {
   return gulp.src(paths.srcCSS)
     .pipe(changed(paths.dist))
-    .pipe(sourcemaps.init())
+    //.pipe(sourcemaps.init())
     .pipe(concat('styles/style.min.css'))
     .pipe(cleanCSS({
       compatibility: 'ie8'
     }))
-    .pipe(sourcemaps.write())
+    //.pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.dist));
 });
 
 gulp.task('bundle', function () {
   return gulp.src(paths.srcJS)
     .pipe(changed(paths.dist))
-    .pipe(sourcemaps.init())
+    //.pipe(sourcemaps.init())
     .pipe(angularFilesort())
     .pipe(concat('scripts/bundle.min.js'))
     .pipe(uglify())
     .pipe(javascriptObfuscator({
       compact: true
     }))
-    .pipe(sourcemaps.write())
+    //.pipe(sourcemaps.write())
     .pipe(gulp.dest('./dist'));
 });
 
