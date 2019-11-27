@@ -422,81 +422,71 @@ span.btn-danger {
 
 .application-areas-container .bg-cover-1 {
     /* background: url('../images/application-areas/1-Electrical-towers.jpg') no-repeat center center; */
-    /* background: url('https://i.ibb.co/C7dQNPX/1-Electrical-towers.jpg') no-repeat center center; */
-    background: url('https://dl.kraken.io/web/def8068ced9e66b206557de08e9eb28c/1-Electrical-towers.jpg') no-repeat center center;
+    background: url('https://i.ibb.co/C7dQNPX/1-Electrical-towers.jpg') no-repeat center center;
+    
     
     background-size: cover;
 }
 
 .application-areas-container .bg-cover-2 {
     /* background: url('../images/application-areas/2-Electrical-equipment.jpg') no-repeat center center; */
-    /* background: url('https://i.ibb.co/GxYKgbQ/2-Electrical-equipment.jpg') no-repeat center center;     */
-    background: url('https://dl.kraken.io/web/1c560bf45481c4bde342b8b07516fd1b/2-Electrical-equipment.jpg') no-repeat center center;     
+    background: url('https://i.ibb.co/GxYKgbQ/2-Electrical-equipment.jpg') no-repeat center center; 
     background-size: cover;
 }
 
 .application-areas-container .bg-cover-3 {
     /* background: url('../images/application-areas/3-Structural-plants.jpg') no-repeat center center; */
-    /* background: url('https://i.ibb.co/XDSY1N2/3-Structural-plants.jpg') no-repeat center center; */
-    background: url('https://dl.kraken.io/web/424d2b1c2db636ce694c6a3a3a07d32d/3-Structural-plants.jpg') no-repeat center center;
+    background: url('https://i.ibb.co/XDSY1N2/3-Structural-plants.jpg') no-repeat center center;  
     background-size: cover;
 }
 
 .application-areas-container .bg-cover-4 {
     /* background: url('../images/application-areas/4-Swimming-pool.jpg') no-repeat center center; */
-    /* background: url('https://i.ibb.co/gdGp5Yh/4-Swimming-pool.jpg') no-repeat center center;    */
-    background: url('https://dl.kraken.io/web/8a6c354c6e343f77733430d8743fc6eb/4-Swimming-pool.jpg') no-repeat center center;  
+    background: url('https://i.ibb.co/gdGp5Yh/4-Swimming-pool.jpg') no-repeat center center; 
     background-size: cover;
 }
 
 .application-areas-container .bg-cover-5 {
     /* background: url('../images/application-areas/5-Furnaces.jpg') no-repeat center center; */
-    /* background: url('https://i.ibb.co/x6JDtQM/5-Furnaces.jpg') no-repeat center center; */
-    background: url('https://dl.kraken.io/web/98fe76e93da6927b2c98120fb1701b0d/5-Furnaces.jpg') no-repeat center center;
+    background: url('https://i.ibb.co/x6JDtQM/5-Furnaces.jpg') no-repeat center center;    
     background-size: cover;
 }
 
 .application-areas-container .bg-cover-6 {
     /* background: url('../images/application-areas/6-Pharmaceutical-industries.jpg') no-repeat center center; */
-    /* background: url('https://i.ibb.co/S5CBV0W/6-Pharmaceutical-industries.jpg') no-repeat center center; */
-    background: url('https://dl.kraken.io/web/89625b4dd4023d862a028905318540bd/6-Pharmaceutical-industries.jpg') no-repeat center center;
+    background: url('https://i.ibb.co/S5CBV0W/6-Pharmaceutical-industries.jpg') no-repeat center center;    
     background-size: cover;
 }
 
 .application-areas-container .bg-cover-7 {
     /* background: url('../images/application-areas/7-Food-&-beverage-industry.jpg') no-repeat center center; */
-    /* background: url('https://i.ibb.co/TMd1JJf/7-Food-beverage-industry.jpg') no-repeat center center; */
-    background: url('https://dl.kraken.io/web/0b27c9839db9268e53440b9e827b81d4/7-Food-&-beverage-industry.jpg') no-repeat center center;
+    background: url('https://i.ibb.co/TMd1JJf/7-Food-beverage-industry.jpg') no-repeat center center;    
     background-size: cover;
 }
 
 .application-areas-container .bg-cover-8 {
     /* background: url('../images/application-areas/8-Chemical-machinery.jpg') no-repeat center center; */
-    /* background: url('https://i.ibb.co/yhX1FHw/8-Chemical-machinery.jpg') no-repeat center center;  */
-    background: url('https://dl.kraken.io/web/dc27182363673c7f005dce7a86d56416/8-Chemical-machinery.jpg') no-repeat center center; 
+    background: url('https://i.ibb.co/yhX1FHw/8-Chemical-machinery.jpg') no-repeat center center;     
     background-size: cover;
 }
 
 .application-areas-container .bg-cover-9 {
     /* background: url('../images/application-areas/9-Building-interiors.jpg') no-repeat center center; */
-    /* background: url('https://i.ibb.co/0XQgbkK/9-Building-interiors.jpg') no-repeat center center;  */
-    background: url('https://dl.kraken.io/web/ec54b33102edd0c053b6125a0a328340/9-Building-interiors.jpg') no-repeat center center;
+    background: url('https://i.ibb.co/0XQgbkK/9-Building-interiors.jpg') no-repeat center center;    
     background-size: cover;
     
 }
 
 .application-areas-container .bg-cover-10 {
     /* background: url('../images/application-areas/10-Roofing.jpg') no-repeat center center; */
-    /* background: url('https://i.ibb.co/T1vXPgG/10-Roofing.jpg') no-repeat center center;  */
-    background: url('https://dl.kraken.io/web/af50643e71292da8f02d41c7d7286647/10-Roofing.jpg') no-repeat center center; 
+    background: url('https://i.ibb.co/T1vXPgG/10-Roofing.jpg') no-repeat center center;
     background-size: cover;
     
 }
 
 .application-areas-container .bg-cover-11 {
     /* background: url('../images/application-areas/11-Installation-of-refineries.jpg') no-repeat center center; */
-    /* background: url('https://i.ibb.co/ynSm69P/11-Installation-of-refineries.jpg') no-repeat center center;      */
-    background: url('https://dl.kraken.io/web/1205d8a9623898a4efc9631a38788a0d/11-Installation-of-refineries.jpg') no-repeat center center;
+    background: url('https://i.ibb.co/ynSm69P/11-Installation-of-refineries.jpg') no-repeat center center; 
     background-size: cover;
 }
 

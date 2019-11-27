@@ -167,7 +167,7 @@
 
     }
 
-    var refresh = function () {
+    //var refresh = function () {
 
       $http({
           method: 'get',
@@ -191,7 +191,7 @@
           // console.log(err);
         });
 
-    }
+    //}
 
     // refresh(); // angular.js:12996 GET http://localhost:3000/api/admin 401 (Unauthorized)
 
