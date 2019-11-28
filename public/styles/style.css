@@ -422,9 +422,7 @@ span.btn-danger {
 
 .application-areas-container .bg-cover-1 {
     /* background: url('../images/application-areas/1-Electrical-towers.jpg') no-repeat center center; */
-    background: url('https://i.ibb.co/C7dQNPX/1-Electrical-towers.jpg') no-repeat center center;
-    
-    
+    background: url("https://i.ibb.co/Sm3T2Bd/1-Electrical-towers.jpg") no-repeat center center;    
     background-size: cover;
 }
 
