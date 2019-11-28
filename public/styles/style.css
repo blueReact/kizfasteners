@@ -330,17 +330,17 @@ span.btn-danger {
 }
 
 .carousel-inner .carousel-item:nth-child(n) {
-    /* background: url(../images/website-banner-one.jpg) no-repeat; */
-    background: url('https://i.ibb.co/0hy2rgM/website-banner-one.jpg') no-repeat;
+    background: url(../images/website-banner-one.jpg) no-repeat;
+    /* background: url('https://i.ibb.co/0hy2rgM/website-banner-one.jpg') no-repeat; */
 }
 
 .carousel-inner .carousel-item:nth-child(2n) {
-    /* background: url(../images/website-banner-two.jpg) no-repeat; */
-    background: url('https://i.ibb.co/mRYBQ6K/website-banner-two.jpg') no-repeat;
+    background: url(../images/website-banner-two.jpg) no-repeat;
+    /* background: url('https://i.ibb.co/mRYBQ6K/website-banner-two.jpg') no-repeat; */
 }
 
 .carousel-inner .carousel-item:nth-child(3n) {
-    /* background: url(../images/website-banner-three.jpg) no-repeat; */
+    background: url(../images/website-banner-three.jpg) no-repeat;
     background: url('https://i.ibb.co/FxN3L6N/website-banner-three.jpg') no-repeat;
 }
 
