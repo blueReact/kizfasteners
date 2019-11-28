@@ -48,6 +48,10 @@ a:active {
     cursor: pointer;
 }
 
+img {
+    width: 100%;
+}
+
 .pull-center {
     text-align: center;
 }
