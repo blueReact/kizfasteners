@@ -529,20 +529,20 @@ h6:after {
 }
 
 .tiles-container>div:nth-child(1n) .bg {
-    /* background: url('../images/vision.jpg') no-repeat; */
-    background: url('https://i.ibb.co/Fh1TdFN/vision.jpg') no-repeat;
+    background: url('../images/vision.jpg') no-repeat;
+    /* background: url('https://i.ibb.co/Fh1TdFN/vision.jpg') no-repeat; */
     background-size: cover;
 }
 
 .tiles-container>div:nth-child(2n) .bg {
-    /* background: url('../images/mission.jpg') no-repeat; */
-    background: url('https://i.ibb.co/Ry9xYnN/mission.jpg') no-repeat;
+    background: url('../images/mission.jpg') no-repeat;
+    /* background: url('https://i.ibb.co/Ry9xYnN/mission.jpg') no-repeat; */
     background-size: cover;
 }
 
 .tiles-container>div:nth-child(3n) .bg {
-    /* background: url('../images/motto.jpg') no-repeat; */
-    background: url('https://i.ibb.co/NSNWq60/motto.jpg') no-repeat;
+    background: url('../images/motto.jpg') no-repeat;
+    /* background: url('https://i.ibb.co/NSNWq60/motto.jpg') no-repeat; */
     background-size: cover;
 }
 
