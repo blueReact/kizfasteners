@@ -49,7 +49,7 @@
 
   <!--font awesome -->
   <link rel="preload" href="fonts/fontawesome-free-5.10.1-web/css/all.min.css" as="style">
-  
+
   <!-- custom -->
   <!-- <link href="styles/style.css" rel="stylesheet"> -->
 
@@ -156,11 +156,57 @@
   <!-- lazysizes by google -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" async></script>
 
-  <script src="library/jquery-3.3.1.slim.min.js" defer ></script>
-  <script src="library/popper.min.js" defer></script>
-  <script src="library/bootstrap.min.js" defer></script>
+  <!-- <script src="library/jquery-3.3.1.slim.min.js"  ></script>
+  <script src="library/popper.min.js" ></script>
+  <script src="library/bootstrap.min.js" ></script>
   <script src="library/angular.min.js"></script>
-  <script src="library/angular-route.min.js"></script>  
+  <script src="library/angular-route.min.js"></script>   -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" async>
+  </script>
+  <!--fallback-->
+  <script>
+    window.jQuery || document.write('<script src="library/jquery-3.3.1.slim.min.js">\x3C/script>')
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" async>
+  </script>
+  <!--fallback-->
+  <script>
+    window.Popper || document.write('<script src="library/popper.min.js"><\/script>')
+  </script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" async>
+  </script>
+  <!--fallback-->
+  <script>
+    $.fn.modal || document.write('<script src="library/bootstrap.min.js">\x3C/script>')
+  </script>
+
+  <!-- angularjs library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.0/angular.min.js" async></script>
+  <!--fallback-->
+  <script>
+    try {
+      angular.module('angular')
+    } catch (e) {
+      document.write('<script src="library/angular.min.js">\x3C/script>')
+    }
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.0/angular-route.min.js" async></script>
+  <!--fallback-->
+  <script>
+    try {
+      angular.module('ngRoute')
+    } catch (e) {
+      document.write('<script src="library/angular-route.min.js">\x3C/script>')
+    }
+  </script>
 
   <!-- custom scripts -->
   <!-- <script src="scripts/module.js"></script>
