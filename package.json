@@ -41,7 +41,7 @@
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-angular-filesort": "^1.2.1",
     "gulp-changed": "^4.0.1",
     "gulp-clean-css": "^4.2.0",
